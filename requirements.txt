@@ -1,0 +1,6 @@
+python-dotenv
+selenium
+flask
+numpy
+openvc-python
+skimage

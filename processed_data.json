@@ -1,0 +1,5329 @@
+{
+    "ELECTRICAL_ENG": [
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                }
+            ],
+            "exam_date": "1404/04/08",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "صدر علي",
+            "course_name": "مدار منطقي",
+            "course_number_and_group": "1211011_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                }
+            ],
+            "exam_date": "1404/04/08",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "ميرزاكوچكي ستار",
+            "course_name": "مدار منطقي",
+            "course_number_and_group": "1211011_02"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                }
+            ],
+            "exam_date": "1404/04/08",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "راحمي نوش آبادي نرجس",
+            "course_name": "مدار منطقي",
+            "course_number_and_group": "1211011_03"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:30"
+                }
+            ],
+            "exam_date": "1404/03/20",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 12,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "جليليان خالقي حميدرضا",
+            "course_name": "آزمايشگاه مدارهاي منطقي",
+            "course_number_and_group": "1211012_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "13:00",
+                    "end_time": "15:00"
+                }
+            ],
+            "exam_date": "1404/03/20",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 12,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "جليليان خالقي حميدرضا",
+            "course_name": "آزمايشگاه مدارهاي منطقي",
+            "course_number_and_group": "1211012_02"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "15:00",
+                    "end_time": "17:00"
+                }
+            ],
+            "exam_date": "1404/03/20",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 12,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "جليليان خالقي حميدرضا",
+            "course_name": "آزمايشگاه مدارهاي منطقي",
+            "course_number_and_group": "1211012_03"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "13:00",
+                    "end_time": "15:00"
+                }
+            ],
+            "exam_date": "1404/03/20",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 12,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "جليليان خالقي حميدرضا",
+            "course_name": "آزمايشگاه مدارهاي منطقي",
+            "course_number_and_group": "1211012_04"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "15:00",
+                    "end_time": "17:00"
+                }
+            ],
+            "exam_date": "1404/03/20",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 12,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "جليليان خالقي حميدرضا",
+            "course_name": "آزمايشگاه مدارهاي منطقي",
+            "course_number_and_group": "1211012_05"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "15:00",
+                    "end_time": "17:00"
+                }
+            ],
+            "exam_date": "1404/03/20",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 12,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "جليليان خالقي حميدرضا",
+            "course_name": "آزمايشگاه مدارهاي منطقي",
+            "course_number_and_group": "1211012_06"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "WEDNESDAY",
+                    "start_time": "11:00",
+                    "end_time": "13:00"
+                }
+            ],
+            "exam_date": "1404/03/20",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 12,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "جليليان خالقي حميدرضا",
+            "course_name": "آزمايشگاه مدارهاي منطقي",
+            "course_number_and_group": "1211012_07"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:30"
+                }
+            ],
+            "exam_date": "1404/03/18",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 12,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "حبيبي دهكا ژاله",
+            "course_name": "آزمايشگاه الكترونيك1",
+            "course_number_and_group": "1211033_04"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/04/02",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "گنجه فر سهيل",
+            "course_name": "سيستمهاي كنترل خطي",
+            "course_number_and_group": "1211036_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/03/28",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "ابريشمي فر سيد اديب",
+            "course_name": "الكترونيك 3",
+            "course_number_and_group": "1211043_02"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:30",
+                    "end_time": "11:30"
+                }
+            ],
+            "exam_date": "1404/03/21",
+            "exam_start_time": "10:30",
+            "exam_end_time": "12:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 12,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "نژاد شاه بداغي محسن",
+            "course_name": "آزمايشگاه ميكروپروسسور",
+            "course_number_and_group": "1211051_02"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:00",
+                    "end_time": "13:00"
+                }
+            ],
+            "exam_date": "",
+            "exam_start_time": "",
+            "exam_end_time": "",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 24,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "شريفي صديقه\nفرهمندي جواد\nمحمدي عبدالحسين",
+            "course_name": "كارگاه عمومي",
+            "course_number_and_group": "1211064_09"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "13:00",
+                    "end_time": "15:00"
+                }
+            ],
+            "exam_date": "1404/03/19",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 12,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "جليليان خالقي حميدرضا",
+            "course_name": "آزمايشگاه مدارهاي الكتريكي و اندازه گيري",
+            "course_number_and_group": "1211068_05"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "13:00",
+                    "end_time": "14:30"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "13:00",
+                    "end_time": "14:30"
+                }
+            ],
+            "exam_date": "1404/04/07",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "جديد شهرام",
+            "course_name": "بررسي سيستمهاي قدرت 1",
+            "course_number_and_group": "1211080_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "WEDNESDAY",
+                    "start_time": "08:00",
+                    "end_time": "10:00"
+                }
+            ],
+            "exam_date": "1404/03/18",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 12,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "توتونچيان فريد\nقاسميان سوربني وحيد",
+            "course_name": "آزمايشگاه ماشين الكتريكي 1",
+            "course_number_and_group": "1211128_05"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "11:00"
+                }
+            ],
+            "exam_date": "1404/03/21",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 12,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "طيراني مجيد",
+            "course_name": "آزمايشگاه مايكروويو1",
+            "course_number_and_group": "1211148_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "09:30",
+                    "end_time": "11:30"
+                }
+            ],
+            "exam_date": "1404/03/20",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 12,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "شكوهيان راد محمدرضا",
+            "course_name": "آزمايشگاه مباني مهندسي برق",
+            "course_number_and_group": "1211320_05"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/03/31",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "بهشتي شيرازي سيدعلي اصغر",
+            "course_name": "اصول سيستمهاي مخابراتي",
+            "course_number_and_group": "1211329_01"
+        }
+    ],
+    "RAILWAY_ENG": [
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/04/02",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 40,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "طلائي محمد رضا",
+            "course_name": "تاسيسات واگن و لكوموتيو",
+            "course_number_and_group": "1311028_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/04/07",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 40,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "طلائي محمد رضا",
+            "course_name": "مكانيك سيالات",
+            "course_number_and_group": "1311029_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                }
+            ],
+            "exam_date": "1404/03/27",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 40,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "ملاطفي حبيب اله",
+            "course_name": "مباني مهندسي ماشينهاي ريلي",
+            "course_number_and_group": "1311030_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "WEDNESDAY",
+                    "start_time": "07:30",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/03/18",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 20,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "قافله باشي سيدمحمداحسان",
+            "course_name": "كارگاه تخصصي واگن",
+            "course_number_and_group": "1311032_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/03/27",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 40,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "فاضل سيد سعيد",
+            "course_name": "طراحي لكوموتيو",
+            "course_number_and_group": "1311035_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "07:30",
+                    "end_time": "09:00"
+                }
+            ],
+            "exam_date": "1404/04/01",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 40,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "نوروزي حامد",
+            "course_name": "طراحي سازه واگن و لكوموتيو",
+            "course_number_and_group": "1311036_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "16:00",
+                    "end_time": "17:30"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "16:00",
+                    "end_time": "17:30"
+                }
+            ],
+            "exam_date": "1404/04/07",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 40,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "ملاطفي حبيب اله",
+            "course_name": "ديناميك حركت قطار",
+            "course_number_and_group": "1311039_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "13:00",
+                    "end_time": "14:30"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "13:00",
+                    "end_time": "14:30"
+                }
+            ],
+            "exam_date": "1404/03/27",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 40,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "اوحدي اصفهاني امين",
+            "course_name": "تكنولوژي ساخت و تعمير و سائط نقليه",
+            "course_number_and_group": "1311042_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/04/04",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 40,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "فاضل سيد سعيد",
+            "course_name": "راه آهن برقي",
+            "course_number_and_group": "1311043_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "16:00",
+                    "end_time": "17:30"
+                }
+            ],
+            "exam_date": "1404/03/27",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 40,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "ملاطفي حبيب اله",
+            "course_name": "طراحي بوژي",
+            "course_number_and_group": "1311044_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                }
+            ],
+            "exam_date": "1404/04/07",
+            "exam_start_time": "11:00",
+            "exam_end_time": "13:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 40,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "مسيبي سيدعلي",
+            "course_name": "مباني مهندسي خط",
+            "course_number_and_group": "1311083_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/03/28",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 40,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "طلائي محمد رضا",
+            "course_name": "ترموديناميك 2",
+            "course_number_and_group": "1311136_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "07:30",
+                    "end_time": "09:00"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "07:30",
+                    "end_time": "09:00"
+                }
+            ],
+            "exam_date": "1404/03/26",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 40,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "روزبهاني محمدحسين",
+            "course_name": "ماشينهاي ريلي ويژه",
+            "course_number_and_group": "1311163_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/04/03",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 40,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "اسد روزبه",
+            "course_name": "كنترل اتوماتيك",
+            "course_number_and_group": "1311182_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/03/28",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 1,
+            "capacity": 40,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "نصر آزاداني سيدمسعود",
+            "course_name": "نگهداري خطوط ريلي",
+            "course_number_and_group": "1311213_01"
+        }
+    ],
+    "INDUSTRIAL_ENG": [
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/03/28",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "ماكويي احمد",
+            "course_name": "تجزيه و تحليل تصميم گيري",
+            "course_number_and_group": "1511001_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/03/28",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "ماكويي احمد",
+            "course_name": "تجزيه و تحليل تصميم گيري",
+            "course_number_and_group": "1511001_02"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "13:00",
+                    "end_time": "14:30"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "13:00",
+                    "end_time": "14:30"
+                }
+            ],
+            "exam_date": "1404/04/02",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "محمدپور عمران محمد",
+            "course_name": "اقتصادمهندسي",
+            "course_number_and_group": "1511033_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/04/02",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "دانشجوي گرامي حضور در كلاس رفع اشكال اين درس در روزهاي دوشنبه 12 تا 13:30 الزامي است.",
+            "professor_name": "غلاميان محمدرضا",
+            "course_name": "اقتصادمهندسي",
+            "course_number_and_group": "1511033_02"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "07:30",
+                    "end_time": "09:00"
+                }
+            ],
+            "exam_date": "1404/03/28",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "شوال پور سعيد",
+            "course_name": "اقتصاد عمومي 1",
+            "course_number_and_group": "1511046_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "WEDNESDAY",
+                    "start_time": "07:30",
+                    "end_time": "09:00"
+                }
+            ],
+            "exam_date": "1404/03/28",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "ميرزامحمدي سعيد",
+            "course_name": "اقتصاد عمومي 2",
+            "course_number_and_group": "1511047_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "16:00",
+                    "end_time": "17:30"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "16:00",
+                    "end_time": "17:30"
+                }
+            ],
+            "exam_date": "1404/04/08",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "محمدي عمران",
+            "course_name": "اصول حسابداري و هزينه يابي",
+            "course_number_and_group": "1511048_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/04/08",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "سجادي سيدجعفر",
+            "course_name": "اصول حسابداري و هزينه يابي",
+            "course_number_and_group": "1511048_02"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "07:30",
+                    "end_time": "09:00"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "07:30",
+                    "end_time": "09:00"
+                }
+            ],
+            "exam_date": "1404/03/27",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "قوسي روزبه",
+            "course_name": "ارزيابي كار و زمان",
+            "course_number_and_group": "1511050_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/03/28",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "شهانقي كامران",
+            "course_name": "طرح ريزي واحدهاي صنعتي",
+            "course_number_and_group": "1511051_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "07:00",
+                    "end_time": "10:00"
+                }
+            ],
+            "exam_date": "",
+            "exam_start_time": "",
+            "exam_end_time": "",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 12,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "محمدعليها محمدرضا\nمحمدي عبدالحسين",
+            "course_name": "كارگاه جوش",
+            "course_number_and_group": "1511064_03"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "13:00",
+                    "end_time": "14:30"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "13:00",
+                    "end_time": "14:30"
+                }
+            ],
+            "exam_date": "1404/04/02",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "محمدعليها محمدرضا",
+            "course_name": "مونتاژ مكانيكي",
+            "course_number_and_group": "1511113_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/04/07",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "محمدعليها محمدرضا",
+            "course_name": "استاتيك و مقاومت مصالح",
+            "course_number_and_group": "1511245_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "13:00",
+                    "end_time": "14:30"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "13:00",
+                    "end_time": "14:30"
+                }
+            ],
+            "exam_date": "1404/04/03",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "قوسي روزبه",
+            "course_name": "عارضه يابي واحدهاي صنعتي",
+            "course_number_and_group": "1511298_01"
+        }
+    ],
+    "PHYSICS": [
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "WEDNESDAY",
+                    "start_time": "13:00",
+                    "end_time": "14:30"
+                }
+            ],
+            "exam_date": "1404/03/21",
+            "exam_start_time": "13:00",
+            "exam_end_time": "14:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 15,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "دباغ كاشاني فاطمه",
+            "course_name": "آزمايشگاه فيزيك پايه 3",
+            "course_number_and_group": "1611013_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                }
+            ],
+            "exam_date": "1404/04/07",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 60,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "ذبيحي لهرمي ذبيح اله",
+            "course_name": "مكانيك تحليلي 2",
+            "course_number_and_group": "1611033_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "16:00",
+                    "end_time": "17:30"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "16:00",
+                    "end_time": "17:30"
+                }
+            ],
+            "exam_date": "1404/04/04",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 60,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "تيراندري مهرانه",
+            "course_name": "رياضي فيزيك 1",
+            "course_number_and_group": "1611035_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/03/31",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 60,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "احمدخان كردبچه اميرحسين",
+            "course_name": "رياضي فيزيك 2",
+            "course_number_and_group": "1611036_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "WEDNESDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                }
+            ],
+            "exam_date": "1404/03/21",
+            "exam_start_time": "14:30",
+            "exam_end_time": "16:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 2,
+            "capacity": 15,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "دباغ كاشاني فاطمه",
+            "course_name": "آزمايشگاه اپتيك",
+            "course_number_and_group": "1611042_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "WEDNESDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/03/21",
+            "exam_start_time": "09:00",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 2,
+            "capacity": 15,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "دباغ كاشاني فاطمه\nذبيحي لهرمي ذبيح اله",
+            "course_name": "آزمايشگاه الكترونيك 1",
+            "course_number_and_group": "1611043_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/04/04",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 60,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "زارع بابك",
+            "course_name": "فيزيك حالت جامد1",
+            "course_number_and_group": "1611044_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "07:30",
+                    "end_time": "09:00"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "07:30",
+                    "end_time": "09:00"
+                }
+            ],
+            "exam_date": "1404/03/31",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 60,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "نميرانيان افشين",
+            "course_name": "نظريه نسبيت",
+            "course_number_and_group": "1611054_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/03/24",
+            "exam_start_time": "09:00",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 2,
+            "capacity": 10,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "فيض آبادي سيدادريس\nپادرگاني علي",
+            "course_name": "آزمايشگاه فيزيك حالت جامد1",
+            "course_number_and_group": "1611061_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                }
+            ],
+            "exam_date": "1404/04/04",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 60,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "بحريني مريم",
+            "course_name": "روش هاي تجربي در فيزيك",
+            "course_number_and_group": "1611081_01"
+        },
+        {
+            "sex": "FEMALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/03/31",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 60,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "زماني ميميان محمد رضا",
+            "course_name": "فيزيك پايه 2",
+            "course_number_and_group": "1611117_10"
+        },
+        {
+            "sex": "MALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "13:00",
+                    "end_time": "14:30"
+                }
+            ],
+            "exam_date": "1404/03/22",
+            "exam_start_time": "09:00",
+            "exam_end_time": "10:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 14,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "طاهرآبادي گل آذين",
+            "course_name": "آزمايشگاه فيزيك پايه 1",
+            "course_number_and_group": "1611123_04"
+        },
+        {
+            "sex": "MALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/03/22",
+            "exam_start_time": "09:00",
+            "exam_end_time": "10:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 14,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "شيخ السلام فرزانه",
+            "course_name": "آزمايشگاه فيزيك پايه 1",
+            "course_number_and_group": "1611123_17"
+        },
+        {
+            "sex": "MALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                }
+            ],
+            "exam_date": "1404/03/22",
+            "exam_start_time": "11:00",
+            "exam_end_time": "12:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 14,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "عابديني امين آباد زهرا",
+            "course_name": "آزمايشگاه فيزيك پايه 2",
+            "course_number_and_group": "1611124_05"
+        },
+        {
+            "sex": "MALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "07:30",
+                    "end_time": "09:00"
+                }
+            ],
+            "exam_date": "1404/03/22",
+            "exam_start_time": "11:00",
+            "exam_end_time": "12:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 14,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "محمدي مريم",
+            "course_name": "آزمايشگاه فيزيك پايه 2",
+            "course_number_and_group": "1611124_15"
+        },
+        {
+            "sex": "MALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "16:00",
+                    "end_time": "17:30"
+                }
+            ],
+            "exam_date": "1404/03/22",
+            "exam_start_time": "11:00",
+            "exam_end_time": "12:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 14,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "نبي زاده اربابي ريحانه\nناصرپور معصومه",
+            "course_name": "آزمايشگاه فيزيك پايه 2",
+            "course_number_and_group": "1611124_25"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                }
+            ],
+            "exam_date": "1404/04/01",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 60,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "واحدي محمد",
+            "course_name": "مكانيك كوانتمي 2",
+            "course_number_and_group": "1611163_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "16:00",
+                    "end_time": "17:30"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "16:00",
+                    "end_time": "17:30"
+                }
+            ],
+            "exam_date": "1404/04/01",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 60,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "شريف سيرت وحيد",
+            "course_name": "فيزيك پايه 1",
+            "course_number_and_group": "1611202_05"
+        }
+    ],
+    "METALOGY_ENG": [
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "13:00",
+                    "end_time": "14:30"
+                }
+            ],
+            "exam_date": "1404/04/04",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "كوه دار حميدرضا",
+            "course_name": "عمليات حرارتي",
+            "course_number_and_group": "1711014_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                }
+            ],
+            "exam_date": "1404/04/04",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "كوه دار حميدرضا",
+            "course_name": "عمليات حرارتي",
+            "course_number_and_group": "1711014_02"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/04/04",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "آقاجاني حسين",
+            "course_name": "عمليات حرارتي",
+            "course_number_and_group": "1711014_03"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                }
+            ],
+            "exam_date": "1404/04/02",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "عشيري روح اله",
+            "course_name": "مواد پيشرفته",
+            "course_number_and_group": "1711028_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "WEDNESDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/04/02",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "بخشايش اميرمحمود",
+            "course_name": "مواد پيشرفته",
+            "course_number_and_group": "1711028_02"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/03/26",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "اعلم الهدي سميه\nصالحي مريم",
+            "course_name": "خواص فيزيكي مواد 1",
+            "course_number_and_group": "1711030_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/04/08",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "سرپولكي حسين",
+            "course_name": "خواص فيزيكي مواد 2",
+            "course_number_and_group": "1711031_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "13:00",
+                    "end_time": "14:30"
+                }
+            ],
+            "exam_date": "1404/04/08",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "كوه دار حميدرضا\nصالحي مريم",
+            "course_name": "خواص فيزيكي مواد 2",
+            "course_number_and_group": "1711031_02"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "WEDNESDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/04/08",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "رضوي سيدحسين",
+            "course_name": "خواص فيزيكي مواد 2",
+            "course_number_and_group": "1711031_03"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/04/07",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "ملكي مهدي",
+            "course_name": "سينتيك مواد",
+            "course_number_and_group": "1711032_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "13:00",
+                    "end_time": "14:30"
+                }
+            ],
+            "exam_date": "1404/03/24",
+            "exam_start_time": "11:00",
+            "exam_end_time": "13:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 10,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "هاشمي نياسري مسعود\nرحيمي زهره",
+            "course_name": "آزمايشگاه خوردگي و پوشش دادن",
+            "course_number_and_group": "1711088_02"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                }
+            ],
+            "exam_date": "1404/03/27",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 20,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "گودرزي مسعود",
+            "course_name": "ترموديناميك مواد1",
+            "course_number_and_group": "1711152_02"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "13:00",
+                    "end_time": "14:30"
+                }
+            ],
+            "exam_date": "1404/04/02",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "هاشمي نياسري مسعود",
+            "course_name": "ايستايي",
+            "course_number_and_group": "1711374_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/03/31",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "خسروشاهي روح اله",
+            "course_name": "خواص الكتروني مواد",
+            "course_number_and_group": "1711432_02"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                },
+                {
+                    "day_of_week": "WEDNESDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/04/03",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "رستگاري سعيد",
+            "course_name": "اصول خوردگي و حفاظت مواد",
+            "course_number_and_group": "1711439_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                }
+            ],
+            "exam_date": "1404/04/08",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "تاج آبادي مريم\nرضايي حميدرضا",
+            "course_name": "سراميكهاي زيستي",
+            "course_number_and_group": "1711453_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/04/03",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "رضوي سيدحسين",
+            "course_name": "اصول شكل دهي فلزات",
+            "course_number_and_group": "1711468_02"
+        }
+    ],
+    "ARCHITECTURE_ENG": [
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/03/31",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "عباس زاده محمدجواد",
+            "course_name": "تاسيسات الكتريكي",
+            "course_number_and_group": "1811067_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "WEDNESDAY",
+                    "start_time": "07:30",
+                    "end_time": "09:00"
+                }
+            ],
+            "exam_date": "1404/03/26",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 40,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "رحماني وحيد",
+            "course_name": "تاسيسات مكانيكي",
+            "course_number_and_group": "1811068_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "13:00",
+                    "end_time": "14:30"
+                }
+            ],
+            "exam_date": "1404/04/08",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 18,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "قربانيان مهشيد",
+            "course_name": "زبان تخصصي",
+            "course_number_and_group": "1811337_02"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [],
+            "exam_date": "",
+            "exam_start_time": "",
+            "exam_end_time": "",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 6,
+            "practical_unit": 0,
+            "capacity": 100,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "اساتيد گروه آموزشي",
+            "course_name": "پروژه نهائي",
+            "course_number_and_group": "1811368_02"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [],
+            "exam_date": "",
+            "exam_start_time": "",
+            "exam_end_time": "",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 6,
+            "practical_unit": 6,
+            "capacity": 100,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "اساتيد گروه آموزشي",
+            "course_name": "طرح نهايي",
+            "course_number_and_group": "1811370_02"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "09:30",
+                    "end_time": "10:15"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "07:30",
+                    "end_time": "09:30"
+                }
+            ],
+            "exam_date": "1404/03/31",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 1,
+            "capacity": 40,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "رهبر مرتضي",
+            "course_name": "مهارت6: داده پردازي در معماري",
+            "course_number_and_group": "1811386_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "WEDNESDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                }
+            ],
+            "exam_date": "1404/03/31",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "حمزه نژاد مهدي\nاكبري الهام",
+            "course_name": "معماري معاصر",
+            "course_number_and_group": "1811391_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "08:00",
+                    "end_time": "09:30"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:30",
+                    "end_time": "11:30"
+                }
+            ],
+            "exam_date": "1404/03/26",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 1,
+            "capacity": 15,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "راعي حسين",
+            "course_name": "مباني هنرهاي تجسمي2",
+            "course_number_and_group": "1811394_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "13:00",
+                    "end_time": "14:30"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:30"
+                }
+            ],
+            "exam_date": "1404/03/26",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 1,
+            "capacity": 15,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "راعي حسين",
+            "course_name": "مباني هنرهاي تجسمي2",
+            "course_number_and_group": "1811394_02"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "07:30",
+                    "end_time": "08:15"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "08:15",
+                    "end_time": "12:15"
+                }
+            ],
+            "exam_date": "1404/03/29",
+            "exam_start_time": "14:00",
+            "exam_end_time": "16:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 2,
+            "capacity": 15,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "صفار دزفولي محسن",
+            "course_name": "فرايند طراحي محصول",
+            "course_number_and_group": "1811397_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "11:30",
+                    "end_time": "12:15"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "07:30",
+                    "end_time": "11:30"
+                }
+            ],
+            "exam_date": "1404/03/18",
+            "exam_start_time": "14:00",
+            "exam_end_time": "16:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 2,
+            "capacity": 15,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "صفري مسعود",
+            "course_name": "كارگاه طراحي پايه2",
+            "course_number_and_group": "1811407_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "11:30",
+                    "end_time": "12:15"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "07:30",
+                    "end_time": "11:30"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "07:30",
+                    "end_time": "12:30"
+                }
+            ],
+            "exam_date": "1404/03/24",
+            "exam_start_time": "11:00",
+            "exam_end_time": "12:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 4,
+            "practical_unit": 3,
+            "capacity": 20,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "تقدير سمانه",
+            "course_name": "طراحي معماري2: طراحي مبتني بر ضوابط و استانداردها",
+            "course_number_and_group": "1811414_02"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "13:00",
+                    "end_time": "13:45"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "13:45",
+                    "end_time": "15:45"
+                }
+            ],
+            "exam_date": "1404/03/27",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 1,
+            "capacity": 25,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "راهب غزال",
+            "course_name": "مهارت5: برنامه ريزي كالبدي",
+            "course_number_and_group": "1811423_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/03/26",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 40,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "صحراگردمنفرد نداسادات",
+            "course_name": "طراحي انرژي كارا",
+            "course_number_and_group": "1811434_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/03/31",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "كليني ممقاني ناصر",
+            "course_name": "هنر در تمدن ايراني-اسلامي",
+            "course_number_and_group": "1811449_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "13:00",
+                    "end_time": "15:00"
+                }
+            ],
+            "exam_date": "1404/03/19",
+            "exam_start_time": "14:00",
+            "exam_end_time": "16:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 15,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "خرم مهدي",
+            "course_name": "ارتباط و همكاري با صنايع توليدي",
+            "course_number_and_group": "1811466_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "13:00",
+                    "end_time": "13:45"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "09:00",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/03/19",
+            "exam_start_time": "18:00",
+            "exam_end_time": "19:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 1,
+            "capacity": 42,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "معماريان غلامحسين",
+            "course_name": "معماري اسلامي",
+            "course_number_and_group": "1811479_01"
+        }
+    ],
+    "MECHANICAL_ENG": [
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "13:00",
+                    "end_time": "14:30"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "13:00",
+                    "end_time": "14:30"
+                }
+            ],
+            "exam_date": "1404/04/02",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 35,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "پورانصاري زينب",
+            "course_name": "مقدمه اي بر ديناميك سيالات محاسباتي(CFD)",
+            "course_number_and_group": "1911021_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                }
+            ],
+            "exam_date": "1404/04/01",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 38,
+            "registered": 0,
+            "waiting": 0,
+            "description": "حل تمرين چهارشنبه ها ساعت 12-11 در كلاس شماره 116",
+            "professor_name": "صفي زاده ميرسعيد",
+            "course_name": "مقاومت مصالح 2",
+            "course_number_and_group": "1911032_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                }
+            ],
+            "exam_date": "1404/04/01",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 38,
+            "registered": 0,
+            "waiting": 0,
+            "description": "حل تمرين چهارشنبه ها ساعت 12-11 در كلاس شماره 106",
+            "professor_name": "حق پناهي محمد",
+            "course_name": "مقاومت مصالح 2",
+            "course_number_and_group": "1911032_02"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                }
+            ],
+            "exam_date": "1404/04/01",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 38,
+            "registered": 0,
+            "waiting": 0,
+            "description": "حل تمرين چهارشنبه ها ساعت 12-11 در كلاس شماره 207",
+            "professor_name": "دانشجو كامران",
+            "course_name": "مقاومت مصالح 2",
+            "course_number_and_group": "1911032_03"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                }
+            ],
+            "exam_date": "1404/04/01",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 40,
+            "registered": 0,
+            "waiting": 0,
+            "description": "حل تمرين سه شنبه ها ساعت 17-16 در كلاس شماره 116",
+            "professor_name": "صفي زاده ميرسعيد",
+            "course_name": "مقاومت مصالح 1",
+            "course_number_and_group": "1911034_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/03/31",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 38,
+            "registered": 0,
+            "waiting": 0,
+            "description": "حل تمرين چهارشنبه ها ساعت 16-15 در كلاس شماره 106",
+            "professor_name": "ذبيحي فر سيدحسن",
+            "course_name": "طراحي اجزاء 1",
+            "course_number_and_group": "1911043_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/03/31",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 38,
+            "registered": 0,
+            "waiting": 0,
+            "description": "حل تمرين چهارشنبه ها ساعت 16-15 در كلاس شماره 201",
+            "professor_name": "طاهري بهروز فتح اله",
+            "course_name": "طراحي اجزاء 1",
+            "course_number_and_group": "1911043_02"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [],
+            "exam_date": "",
+            "exam_start_time": "",
+            "exam_end_time": "",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 0,
+            "practical_unit": 0,
+            "capacity": 100,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "صالحي سيده سارا",
+            "course_name": "فاز صفر پروژه",
+            "course_number_and_group": "1911044_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/04/07",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 35,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "طاهري بهروز فتح اله",
+            "course_name": "مكانيك مواد كامپوزيت",
+            "course_number_and_group": "1911070_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/03/26",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 38,
+            "registered": 0,
+            "waiting": 0,
+            "description": "حل تمرين چهارشنبه ها ساعت 16-15 در كلاس شماره 116",
+            "professor_name": "بيگ زاده برهان",
+            "course_name": "كنترل اتوماتيك",
+            "course_number_and_group": "1911075_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "13:00",
+                    "end_time": "14:30"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "13:00",
+                    "end_time": "14:30"
+                }
+            ],
+            "exam_date": "1404/04/04",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "حل تمرين چهارشنبه ها ساعت 15-14 در كلاس شماره 115",
+            "professor_name": "بازديدي طهراني فرزاد",
+            "course_name": "انتقال حرارت 1",
+            "course_number_and_group": "1911103_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                }
+            ],
+            "exam_date": "1404/03/20",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 12,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "صالحي سيده سارا\nموسي خاني مصطفي",
+            "course_name": "آزمايشگاه ترموديناميك",
+            "course_number_and_group": "1911110_02"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "13:00",
+                    "end_time": "14:30"
+                }
+            ],
+            "exam_date": "1404/03/19",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 12,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "حبيب نژاد كواريم عليرضا\nمحمودوند محمد",
+            "course_name": "آزمايشگاه ديناميك ماشين",
+            "course_number_and_group": "1911114_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "16:00",
+                    "end_time": "17:30"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "16:00",
+                    "end_time": "17:30"
+                }
+            ],
+            "exam_date": "1404/04/04",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 35,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "هاشمي رامين",
+            "course_name": "پلاستيسيته و تغيير شكل فلزات",
+            "course_number_and_group": "1911142_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/04/08",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "حل تمرين يكشنبه ها ساعت 17-16 در كلاس شماره 106",
+            "professor_name": "اشرفي محمد جواد",
+            "course_name": "استاتيك",
+            "course_number_and_group": "1911364_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/04/07",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 25,
+            "registered": 0,
+            "waiting": 0,
+            "description": "حل تمرين سه شنبه ها ساعت 17-16 در كلاس شماره 115",
+            "professor_name": "مقيمي مهدي",
+            "course_name": "مكانيك سيالات 2",
+            "course_number_and_group": "1911368_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "",
+            "exam_start_time": "",
+            "exam_end_time": "",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 12,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "عابديني رضوان",
+            "course_name": "آزمايشگاه سيستمهاي اندازه گيري",
+            "course_number_and_group": "1911381_02"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "16:00",
+                    "end_time": "17:30"
+                }
+            ],
+            "exam_date": "1404/04/02",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 40,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "اكبري حبيب اله",
+            "course_name": "مديريت و كنترل پروژه",
+            "course_number_and_group": "1911385_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [],
+            "exam_date": "",
+            "exam_start_time": "",
+            "exam_end_time": "",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 0,
+            "practical_unit": 0,
+            "capacity": 80,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "ذبيحي فر سيدحسن",
+            "course_name": "كارگاه مهارتهاي مهندسي2",
+            "course_number_and_group": "1911398_01"
+        }
+    ],
+    "CHEMICAL_ENG": [
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "14:30",
+                    "end_time": "15:30"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "15:30",
+                    "end_time": "18:30"
+                }
+            ],
+            "exam_date": "1404/03/20",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 1,
+            "capacity": 20,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "مهندس پور فروغ",
+            "course_name": "نقشه كشي صنعتي",
+            "course_number_and_group": "2011002_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "13:00",
+                    "end_time": "14:30"
+                }
+            ],
+            "exam_date": "1404/04/07",
+            "exam_start_time": "13:00",
+            "exam_end_time": "14:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 25,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "ثباتي محمدامين",
+            "course_name": "فرايندهاي پالايش نفت",
+            "course_number_and_group": "2011004_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                }
+            ],
+            "exam_date": "1404/04/01",
+            "exam_start_time": "13:00",
+            "exam_end_time": "15:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 25,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "صادقي محمدتقي",
+            "course_name": "فرايندهاي گاز",
+            "course_number_and_group": "2011006_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "13:00",
+                    "end_time": "14:30"
+                }
+            ],
+            "exam_date": "1404/04/04",
+            "exam_start_time": "08:30",
+            "exam_end_time": "11:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 25,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "كثيري بيدهندي نوراله",
+            "course_name": "فرايندهاي پتروشيمي",
+            "course_number_and_group": "2011007_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "16:00",
+                    "end_time": "19:00"
+                }
+            ],
+            "exam_date": "1404/03/18",
+            "exam_start_time": "08:30",
+            "exam_end_time": "11:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 12,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "برادران سروش",
+            "course_name": "كارگاه نرم افزار مهندسي شيمي",
+            "course_number_and_group": "2011008_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/04/08",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 25,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "ثباتي محمدامين",
+            "course_name": "طرح واقتصاد كارخانه",
+            "course_number_and_group": "2011009_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                }
+            ],
+            "exam_date": "1404/03/27",
+            "exam_start_time": "11:00",
+            "exam_end_time": "13:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 25,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "نوروزبيگي رضا\nروشن ضمير سوسن",
+            "course_name": "فرايندهاي نو در مهندسي شيمي",
+            "course_number_and_group": "2011016_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/04/03",
+            "exam_start_time": "08:30",
+            "exam_end_time": "11:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 25,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "فرخ زاد حسن",
+            "course_name": "شيمي فيزيك مهندسي شيمي",
+            "course_number_and_group": "2011017_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/03/26",
+            "exam_start_time": "08:30",
+            "exam_end_time": "11:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 25,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "فصيحي دستجردي محمد",
+            "course_name": "ترموديناميك مهندسي شيمي 1",
+            "course_number_and_group": "2011018_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "07:30",
+                    "end_time": "09:00"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "07:30",
+                    "end_time": "09:00"
+                }
+            ],
+            "exam_date": "1404/03/28",
+            "exam_start_time": "08:30",
+            "exam_end_time": "11:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 25,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "ميرشفيعي سيده فائزه",
+            "course_name": "ترموديناميك مهندسي شيمي2",
+            "course_number_and_group": "2011019_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/03/26",
+            "exam_start_time": "08:30",
+            "exam_end_time": "11:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 20,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "همتي عليرضا",
+            "course_name": "انتقال جرم",
+            "course_number_and_group": "2011039_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "WEDNESDAY",
+                    "start_time": "12:30",
+                    "end_time": "14:30"
+                }
+            ],
+            "exam_date": "1404/03/20",
+            "exam_start_time": "08:30",
+            "exam_end_time": "11:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 10,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "همتي عليرضا\nبيرانوند زهرا",
+            "course_name": "آزمايشگاه عمليات واحد",
+            "course_number_and_group": "2011107_02"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/04/02",
+            "exam_start_time": "11:00",
+            "exam_end_time": "13:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 20,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "شاه حسيني شاهرخ",
+            "course_name": "انتقال حرارت 1",
+            "course_number_and_group": "2011192_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "13:00",
+                    "end_time": "14:30"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "13:00",
+                    "end_time": "14:30"
+                }
+            ],
+            "exam_date": "1404/04/07",
+            "exam_start_time": "11:00",
+            "exam_end_time": "13:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 20,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "فاضلي حسين",
+            "course_name": "مباني برنامه نويسي كامپيوتر",
+            "course_number_and_group": "2011229_02"
+        }
+    ],
+    "CIVIL_ENG": [
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/04/07",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 15,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "حسين زاده مجيد",
+            "course_name": "مهندسي آب و فاضلاب",
+            "course_number_and_group": "2111010_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/04/07",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 15,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "حسني زنوزي مريم",
+            "course_name": "مهندسي آب و فاضلاب",
+            "course_number_and_group": "2111010_02"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/03/31",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 25,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "حسني زنوزي مريم",
+            "course_name": "مهندسي محيط زيست",
+            "course_number_and_group": "2111011_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                }
+            ],
+            "exam_date": "1404/03/26",
+            "exam_start_time": "11:00",
+            "exam_end_time": "13:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "افنديزاده زرگري شهريار",
+            "course_name": "مهندسي راه آهن",
+            "course_number_and_group": "2111036_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/03/28",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 25,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "تميمي وحيد",
+            "course_name": "اصول مهندسي سد",
+            "course_number_and_group": "2111068_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/03/27",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "قادري پدرام",
+            "course_name": "تحليل سازه ها 2",
+            "course_number_and_group": "2111082_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "08:00",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/04/07",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 2,
+            "capacity": 15,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "مجردي برات",
+            "course_name": "نقشه برداري و عمليات 1",
+            "course_number_and_group": "2111090_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "08:00",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/04/07",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 2,
+            "capacity": 15,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "بهزادي سعيد",
+            "course_name": "نقشه برداري و عمليات 1",
+            "course_number_and_group": "2111090_02"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "16:00",
+                    "end_time": "17:30"
+                }
+            ],
+            "exam_date": "1404/04/04",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 1,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "ملكي تبار حسن",
+            "course_name": "روشهاي اجرايي ساختمان",
+            "course_number_and_group": "2111093_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/03/28",
+            "exam_start_time": "11:00",
+            "exam_end_time": "13:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 25,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "صابر ماهاني محسن",
+            "course_name": "مكانيك خاك",
+            "course_number_and_group": "2111104_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "",
+            "exam_start_time": "",
+            "exam_end_time": "",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 20,
+            "registered": 0,
+            "waiting": 0,
+            "description": "با توجه به مصوبه گروه سازه دانشجويان بايد حداقل يكي از دروس فولاد1 و فولاد2 را با استاد اين درس گذرانده باشند",
+            "professor_name": "قدرتي اميري غلامرضا",
+            "course_name": "پروژه سازه هاي فولادي",
+            "course_number_and_group": "2111126_02"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/03/20",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 12,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "مينايي علي",
+            "course_name": "آزمايشگاه تكنولوژي بتن",
+            "course_number_and_group": "2111153_02"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/03/27",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "قادري پدرام",
+            "course_name": "مقاومت مصالح 1",
+            "course_number_and_group": "2111228_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/03/27",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "گلشن خواص رضا",
+            "course_name": "زبان تخصصي",
+            "course_number_and_group": "2111280_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/04/03",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 25,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "حقايقي زهره سادات",
+            "course_name": "مهندسي عمران در دريا",
+            "course_number_and_group": "2111355_01"
+        }
+    ],
+    "COMPUTER_ENG": [
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "07:30",
+                    "end_time": "09:00"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "07:30",
+                    "end_time": "09:00"
+                }
+            ],
+            "exam_date": "1404/04/04",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 30,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "رفيعي آتاني طيبه",
+            "course_name": "مباني كامپيوتروبرنامه سازي",
+            "course_number_and_group": "2211001_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/03/31",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 50,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "انتظاري ملكي رضا",
+            "course_name": "نظريه زبانها و ماشينها",
+            "course_number_and_group": "2211019_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/03/31",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 50,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "غيور باغباني سيده فرزانه",
+            "course_name": "نظريه زبانها و ماشينها",
+            "course_number_and_group": "2211019_02"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/03/28",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 35,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "اعتمادي سيد صالح",
+            "course_name": "برنامه سازي پيشرفته",
+            "course_number_and_group": "2211025_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/03/28",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 35,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "ملكي مجد مرضيه",
+            "course_name": "برنامه سازي پيشرفته",
+            "course_number_and_group": "2211025_02"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/03/28",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 35,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "داود آبادي فراهاني مرضيه",
+            "course_name": "برنامه سازي پيشرفته",
+            "course_number_and_group": "2211025_03"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/04/08",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 45,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "حسيني منزه اميرمهدي",
+            "course_name": "معماري كامپيوتر",
+            "course_number_and_group": "2211026_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/04/08",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 45,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "كاشي سميه",
+            "course_name": "معماري كامپيوتر",
+            "course_number_and_group": "2211026_02"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:30"
+                }
+            ],
+            "exam_date": "1404/03/24",
+            "exam_start_time": "10:30",
+            "exam_end_time": "12:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 12,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "تركاشون رضا",
+            "course_name": "آزمايشگاه پايگاه داده ها",
+            "course_number_and_group": "2211027_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "16:00",
+                    "end_time": "18:00"
+                }
+            ],
+            "exam_date": "1404/03/24",
+            "exam_start_time": "16:00",
+            "exam_end_time": "18:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 12,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "تركاشون رضا",
+            "course_name": "آزمايشگاه پايگاه داده ها",
+            "course_number_and_group": "2211027_02"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                }
+            ],
+            "exam_date": "1404/03/31",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 65,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "شيخي مرضيه",
+            "course_name": "انتقال داده ها",
+            "course_number_and_group": "2211055_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/04/07",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 100,
+            "registered": 0,
+            "waiting": 0,
+            "description": "زبان برنامه نويسي : C++",
+            "professor_name": "آشتياني مهرداد",
+            "course_name": "مباني برنامه نويسي كامپيوتر",
+            "course_number_and_group": "2211277_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:30"
+                }
+            ],
+            "exam_date": "1404/03/18",
+            "exam_start_time": "10:30",
+            "exam_end_time": "12:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 10,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "مشحون هاشم",
+            "course_name": "آزمايشگاه ريز پردازنده",
+            "course_number_and_group": "2211303_02"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "07:30",
+                    "end_time": "09:00"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "07:30",
+                    "end_time": "09:00"
+                }
+            ],
+            "exam_date": "1404/03/26",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 45,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "داود آبادي فراهاني مرضيه",
+            "course_name": "مباني پردازش زبان و گفتار",
+            "course_number_and_group": "2211322_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "WEDNESDAY",
+                    "start_time": "16:30",
+                    "end_time": "19:30"
+                }
+            ],
+            "exam_date": "1404/03/21",
+            "exam_start_time": "16:30",
+            "exam_end_time": "19:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 0,
+            "practical_unit": 0,
+            "capacity": 25,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "آشتياني مهرداد",
+            "course_name": "كارگاه برنامه نويسي كامپيوتر",
+            "course_number_and_group": "2211402_04"
+        }
+    ],
+    "PHYSICALEDU": [
+        {
+            "sex": "MALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "07:30",
+                    "end_time": "09:00"
+                }
+            ],
+            "exam_date": "",
+            "exam_start_time": "",
+            "exam_end_time": "",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 18,
+            "registered": 0,
+            "waiting": 0,
+            "description": "آمادگي چسماني",
+            "professor_name": "شريعتي جمال الدين",
+            "course_name": "تربيت بدني",
+            "course_number_and_group": "2611001_01"
+        },
+        {
+            "sex": "MALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "07:30",
+                    "end_time": "09:00"
+                }
+            ],
+            "exam_date": "",
+            "exam_start_time": "",
+            "exam_end_time": "",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 18,
+            "registered": 0,
+            "waiting": 0,
+            "description": "آمادگي جسماني",
+            "professor_name": "شريعتي جمال الدين",
+            "course_name": "تربيت بدني",
+            "course_number_and_group": "2611001_02"
+        },
+        {
+            "sex": "MALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "WEDNESDAY",
+                    "start_time": "07:30",
+                    "end_time": "09:00"
+                }
+            ],
+            "exam_date": "",
+            "exam_start_time": "",
+            "exam_end_time": "",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 18,
+            "registered": 0,
+            "waiting": 0,
+            "description": "آمادگي جسماني",
+            "professor_name": "شريعتي جمال الدين",
+            "course_name": "تربيت بدني",
+            "course_number_and_group": "2611001_03"
+        },
+        {
+            "sex": "MALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "",
+            "exam_start_time": "",
+            "exam_end_time": "",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 18,
+            "registered": 0,
+            "waiting": 0,
+            "description": "آمادگي جسماني",
+            "professor_name": "نجاريان مهدي",
+            "course_name": "تربيت بدني",
+            "course_number_and_group": "2611001_04"
+        },
+        {
+            "sex": "MALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "",
+            "exam_start_time": "",
+            "exam_end_time": "",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 18,
+            "registered": 0,
+            "waiting": 0,
+            "description": "آمادگي جسماني",
+            "professor_name": "نجاريان مهدي",
+            "course_name": "تربيت بدني",
+            "course_number_and_group": "2611001_05"
+        },
+        {
+            "sex": "MALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "",
+            "exam_start_time": "",
+            "exam_end_time": "",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 18,
+            "registered": 0,
+            "waiting": 0,
+            "description": "آمادگي جسماني",
+            "professor_name": "نجاريان مهدي",
+            "course_name": "تربيت بدني",
+            "course_number_and_group": "2611001_06"
+        },
+        {
+            "sex": "MALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "",
+            "exam_start_time": "",
+            "exam_end_time": "",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 18,
+            "registered": 0,
+            "waiting": 0,
+            "description": "آمادگي جسماني",
+            "professor_name": "نجاريان مهدي",
+            "course_name": "تربيت بدني",
+            "course_number_and_group": "2611001_07"
+        },
+        {
+            "sex": "MALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "",
+            "exam_start_time": "",
+            "exam_end_time": "",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 18,
+            "registered": 0,
+            "waiting": 0,
+            "description": "آمادگي جسماني",
+            "professor_name": "نجاريان مهدي",
+            "course_name": "تربيت بدني",
+            "course_number_and_group": "2611001_08"
+        },
+        {
+            "sex": "MALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "WEDNESDAY",
+                    "start_time": "07:30",
+                    "end_time": "09:00"
+                }
+            ],
+            "exam_date": "",
+            "exam_start_time": "",
+            "exam_end_time": "",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 18,
+            "registered": 0,
+            "waiting": 0,
+            "description": "آمادگي جسماني",
+            "professor_name": "سيفي حميد",
+            "course_name": "تربيت بدني",
+            "course_number_and_group": "2611001_09"
+        },
+        {
+            "sex": "MALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "WEDNESDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "",
+            "exam_start_time": "",
+            "exam_end_time": "",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 18,
+            "registered": 0,
+            "waiting": 0,
+            "description": "آمادگي جسماني",
+            "professor_name": "سيفي حميد",
+            "course_name": "تربيت بدني",
+            "course_number_and_group": "2611001_10"
+        },
+        {
+            "sex": "FEMALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "",
+            "exam_start_time": "",
+            "exam_end_time": "",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 18,
+            "registered": 0,
+            "waiting": 0,
+            "description": "آمادگي جسماني",
+            "professor_name": "نمازي آسيه",
+            "course_name": "تربيت بدني",
+            "course_number_and_group": "2611001_46"
+        },
+        {
+            "sex": "MALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "",
+            "exam_start_time": "",
+            "exam_end_time": "",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 18,
+            "registered": 0,
+            "waiting": 0,
+            "description": "تنيس روي ميز",
+            "professor_name": "نجاريان مهدي",
+            "course_name": "ورزش1",
+            "course_number_and_group": "2611002_22"
+        },
+        {
+            "sex": "MALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "WEDNESDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "",
+            "exam_start_time": "",
+            "exam_end_time": "",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 12,
+            "registered": 0,
+            "waiting": 0,
+            "description": "شنا",
+            "professor_name": "نوروزي مجيد",
+            "course_name": "ورزش1",
+            "course_number_and_group": "2611002_32"
+        },
+        {
+            "sex": "FEMALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "",
+            "exam_start_time": "",
+            "exam_end_time": "",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 1,
+            "practical_unit": 1,
+            "capacity": 18,
+            "registered": 0,
+            "waiting": 0,
+            "description": "شنا",
+            "professor_name": "مولائي زينب",
+            "course_name": "ورزش1",
+            "course_number_and_group": "2611002_55"
+        }
+    ],
+    "ISLAMICEDU": [
+        {
+            "sex": "FEMALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                }
+            ],
+            "exam_date": "1404/04/02",
+            "exam_start_time": "11:00",
+            "exam_end_time": "13:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 40,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "دري كفراني محمد",
+            "course_name": "ارزشهاي دفاع مقدس",
+            "course_number_and_group": "2711001_01"
+        },
+        {
+            "sex": "MALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "16:00",
+                    "end_time": "17:30"
+                }
+            ],
+            "exam_date": "1404/04/02",
+            "exam_start_time": "11:00",
+            "exam_end_time": "13:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 40,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "دري كفراني محمد",
+            "course_name": "ارزشهاي دفاع مقدس",
+            "course_number_and_group": "2711001_02"
+        },
+        {
+            "sex": "MALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "07:30",
+                    "end_time": "09:00"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "07:30",
+                    "end_time": "09:00"
+                }
+            ],
+            "exam_date": "1404/03/28",
+            "exam_start_time": "11:00",
+            "exam_end_time": "13:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 35,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "نصيري محسن",
+            "course_name": "فارسي",
+            "course_number_and_group": "2711002_01"
+        },
+        {
+            "sex": "MALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/03/28",
+            "exam_start_time": "11:00",
+            "exam_end_time": "13:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 35,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "نصيري محسن",
+            "course_name": "فارسي",
+            "course_number_and_group": "2711002_02"
+        },
+        {
+            "sex": "MALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                }
+            ],
+            "exam_date": "1404/03/28",
+            "exam_start_time": "11:00",
+            "exam_end_time": "13:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 35,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "نصيري محسن",
+            "course_name": "فارسي",
+            "course_number_and_group": "2711002_03"
+        },
+        {
+            "sex": "MALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "16:00",
+                    "end_time": "17:30"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "16:00",
+                    "end_time": "17:30"
+                }
+            ],
+            "exam_date": "1404/03/28",
+            "exam_start_time": "11:00",
+            "exam_end_time": "13:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 35,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "نصيري محسن",
+            "course_name": "فارسي",
+            "course_number_and_group": "2711002_04"
+        },
+        {
+            "sex": "FEMALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/03/28",
+            "exam_start_time": "11:00",
+            "exam_end_time": "13:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 35,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "رضواني عباس",
+            "course_name": "فارسي",
+            "course_number_and_group": "2711002_05"
+        },
+        {
+            "sex": "MALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/03/28",
+            "exam_start_time": "11:00",
+            "exam_end_time": "13:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 35,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "رضواني عباس",
+            "course_name": "فارسي",
+            "course_number_and_group": "2711002_06"
+        },
+        {
+            "sex": "FEMALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "16:00",
+                    "end_time": "17:30"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "16:00",
+                    "end_time": "17:30"
+                }
+            ],
+            "exam_date": "1404/03/28",
+            "exam_start_time": "11:00",
+            "exam_end_time": "13:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 35,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "حق شناس مريم",
+            "course_name": "فارسي",
+            "course_number_and_group": "2711002_07"
+        },
+        {
+            "sex": "MALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                }
+            ],
+            "exam_date": "1404/03/31",
+            "exam_start_time": "11:00",
+            "exam_end_time": "13:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 35,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "موسوي سيداصغر",
+            "course_name": "تفسير موضوعي نهج البلاغه",
+            "course_number_and_group": "2711003_01"
+        },
+        {
+            "sex": "MALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "07:30",
+                    "end_time": "09:00"
+                }
+            ],
+            "exam_date": "1404/04/04",
+            "exam_start_time": "11:00",
+            "exam_end_time": "13:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 35,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "مدرسي حميد",
+            "course_name": "انديشه اسلامي1",
+            "course_number_and_group": "2711004_07"
+        },
+        {
+            "sex": "FEMALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "16:00",
+                    "end_time": "17:30"
+                }
+            ],
+            "exam_date": "1404/03/26",
+            "exam_start_time": "11:00",
+            "exam_end_time": "13:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 35,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "بلندقامت پور زهير",
+            "course_name": "انديشه اسلامي2",
+            "course_number_and_group": "2711005_06"
+        },
+        {
+            "sex": "FEMALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                }
+            ],
+            "exam_date": "1404/04/01",
+            "exam_start_time": "11:00",
+            "exam_end_time": "13:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 35,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "استوار مجتبي",
+            "course_name": "انقلاب اسلامي ايران",
+            "course_number_and_group": "2711006_05"
+        },
+        {
+            "sex": "MALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/03/27",
+            "exam_start_time": "11:00",
+            "exam_end_time": "13:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 35,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "شهبازي محمد",
+            "course_name": "تاريخ تحليلي صدر اسلام",
+            "course_number_and_group": "2711007_06"
+        },
+        {
+            "sex": "MALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/03/31",
+            "exam_start_time": "11:00",
+            "exam_end_time": "13:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 35,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "مدرسي حميد",
+            "course_name": "تفسير موضوعي قرآن",
+            "course_number_and_group": "2711010_01"
+        },
+        {
+            "sex": "MALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                }
+            ],
+            "exam_date": "1404/04/03",
+            "exam_start_time": "11:00",
+            "exam_end_time": "13:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 35,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "غفاري جواد",
+            "course_name": "اخلاق اسلامي",
+            "course_number_and_group": "2711011_04"
+        },
+        {
+            "sex": "MALE",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                }
+            ],
+            "exam_date": "1404/03/27",
+            "exam_start_time": "11:00",
+            "exam_end_time": "13:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 35,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "دادور آلانق مرتضي",
+            "course_name": "تاريخ فرهنگ و تمدن اسلامي",
+            "course_number_and_group": "2711021_04"
+        }
+    ],
+    "CHEMISTRY": [
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "16:00",
+                    "end_time": "17:30"
+                },
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "16:00",
+                    "end_time": "17:30"
+                }
+            ],
+            "exam_date": "1404/04/02",
+            "exam_start_time": "08:30",
+            "exam_end_time": "10:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 16,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "جوانشير شهرزاد",
+            "course_name": "شيمي آلي 3",
+            "course_number_and_group": "2911092_01"
+        }
+    ],
+    "MANAGEMENT": [
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "MONDAY",
+                    "start_time": "08:00",
+                    "end_time": "10:00"
+                }
+            ],
+            "exam_date": "1404/04/07",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 25,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "حق گويان زلفا",
+            "course_name": "تئوريهاي مديريت",
+            "course_number_and_group": "3212330_01"
+        }
+    ],
+    "NOOR": [
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [],
+            "exam_date": "",
+            "exam_start_time": "",
+            "exam_end_time": "",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 0,
+            "practical_unit": 0,
+            "capacity": 20,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "محمدي عمران",
+            "course_name": "روش تحقيق",
+            "course_number_and_group": "3315013_01"
+        }
+    ],
+    "PARDIS": [
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "09:30",
+                    "end_time": "10:15"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "07:30",
+                    "end_time": "09:30"
+                }
+            ],
+            "exam_date": "1404/03/27",
+            "exam_start_time": "11:00",
+            "exam_end_time": "13:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 1,
+            "capacity": 5,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "ملك زاده مسعود",
+            "course_name": "نظريه هاي مكان يابي محيط هاي آموزشي",
+            "course_number_and_group": "3418257_40"
+        }
+    ],
+    "GENERAL": [
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "13:00",
+                    "end_time": "14:30"
+                }
+            ],
+            "exam_date": "1404/04/02",
+            "exam_start_time": "11:00",
+            "exam_end_time": "13:00",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 2,
+            "practical_unit": 0,
+            "capacity": 40,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "جنابي شهاب",
+            "course_name": "كارآفريني",
+            "course_number_and_group": "9011222_01"
+        },
+        {
+            "sex": "COMPLEX",
+            "lecture_schedules": [
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "07:30",
+                    "end_time": "09:00"
+                },
+                {
+                    "day_of_week": "SATURDAY",
+                    "start_time": "07:30",
+                    "end_time": "09:00"
+                }
+            ],
+            "exam_date": "1404/04/03",
+            "exam_start_time": "13:30",
+            "exam_end_time": "15:30",
+            "can_emergency_delete": true,
+            "can_be_taken_by_guests": true,
+            "total_unit": 3,
+            "practical_unit": 0,
+            "capacity": 40,
+            "registered": 0,
+            "waiting": 0,
+            "description": "",
+            "professor_name": "پارسانژاد محمدرضا",
+            "course_name": "كارآفريني",
+            "course_number_and_group": "9011333_01"
+        }
+    ]
+}
