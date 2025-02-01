@@ -46,7 +46,7 @@ departmenet_names_map = {
     "مهندسي عمران":"CIVIL_ENG",
     "مهندسي كامپيوتر":"COMPUTER_ENG",
     "تربيت بدني":"PHYSICALEDU",
-    "معارف اسلامي و ادبيات فارسي":"ISLAMICEDU",
+    "معارف اسلامي و ادبيات ":"ISLAMICEDU",
     "شيمي":"CHEMISTRY",
     "مديريت، اقتصاد و مهندسي پيشرفت":"MANAGEMENT",
     "واحد نور":"NOOR",
@@ -54,7 +54,34 @@ departmenet_names_map = {
     "عمومي":"GENERAL"
     
 }
+def arabic_to_persian(text: str) -> str:
+    # arabic: persian
+    characters = {
+        'ك': 'ک',
+        'دِ': 'د',
+        'بِ': 'ب',
+        'زِ': 'ز',
+        'ذِ': 'ذ',
+        'شِ': 'ش',
+        'سِ': 'س',
+        'ى': 'ی',
+        'ي': 'ی',
+        '١': '۱',
+        '٢': '۲',
+        '٣': '۳',
+        '٤': '۴',
+        '٥': '۵',
+        '٦': '۶',
+        '٧': '۷',
+        '٨': '۸',
+        '٩': '۹',
+        '٠': '۰',
+    }
 
+    for arabic, persian in characters.items():
+        text = text.replace(arabic, persian)
+
+    return text
 def persian_to_english_number_regex(persian_str):
     persian_digits_map = {
         '۰': '0', '۱': '1', '۲': '2', '۳': '3', '۴': '4', 
@@ -122,21 +149,21 @@ def process_data(x:dict):
         else:
             print("unknown can_be_taken_by_guests text found")
 
-        total_unit = int(persian_to_english_number_regex(raw_data["total_unit"])) if len(raw_data["total_unit"])>0 else 0
-        practical_unit = int(persian_to_english_number_regex(raw_data["practical_unit"])) if len(raw_data["practical_unit"])>0 else 0
-        capacity = int(persian_to_english_number_regex(raw_data["capacity"])) if len(raw_data["capacity"])>0 else 0
-        registered = int(persian_to_english_number_regex(raw_data["registered"])) if len(raw_data["registered"])>0 else 0
-        waiting = int(persian_to_english_number_regex(raw_data["waiting"])) if len(raw_data["waiting"])>0 else 0
-        course_number_and_group = persian_to_english_number_regex(raw_data["course_number_and_group"]) 
-        description =persian_to_english_number_regex(raw_data["description"]) 
+        total_unit = int(persian_to_english_number_regex(arabic_to_persian(raw_data["total_unit"]))) if len(raw_data["total_unit"])>0 else 0
+        practical_unit = int(persian_to_english_number_regex(arabic_to_persian(raw_data["practical_unit"]))) if len(raw_data["practical_unit"])>0 else 0
+        capacity = int(persian_to_english_number_regex(arabic_to_persian(raw_data["capacity"]))) if len(raw_data["capacity"])>0 else 0
+        registered = int(persian_to_english_number_regex(arabic_to_persian(raw_data["registered"]))) if len(raw_data["registered"])>0 else 0
+        waiting = int(persian_to_english_number_regex(arabic_to_persian(raw_data["waiting"]))) if len(raw_data["waiting"])>0 else 0
+        course_number_and_group = persian_to_english_number_regex(arabic_to_persian(raw_data["course_number_and_group"])) 
+        description =persian_to_english_number_regex(arabic_to_persian(raw_data["description"])) 
         exam_date=""
         exam_start_time=""
         exam_end_time=""
         match = re.search(r'تاريخ:\s*([\d/]+)\s*ساعت:\s*([\d:]+)-([\d:]+)', raw_data["exam_location_and_time"])
         if match:
-            exam_date = persian_to_english_number_regex(match.group(1))
-            exam_start_time = persian_to_english_number_regex(match.group(2))
-            exam_end_time = persian_to_english_number_regex(match.group(3))
+            exam_date = persian_to_english_number_regex(arabic_to_persian(match.group(1)))
+            exam_start_time = persian_to_english_number_regex(arabic_to_persian(match.group(2)))
+            exam_end_time = persian_to_english_number_regex(arabic_to_persian(match.group(3)))
 
 
 
@@ -146,8 +173,9 @@ def process_data(x:dict):
 
         for match in matches:
             day, start_time, end_time = match
-            start_time = persian_to_english_number_regex(start_time)
-            end_time = persian_to_english_number_regex(end_time)
+            
+            start_time = persian_to_english_number_regex(arabic_to_persian(start_time))
+            end_time = persian_to_english_number_regex(arabic_to_persian(end_time))
 
             schedules.append({
                 "day_of_week": weekday_map.get(day),
@@ -169,8 +197,8 @@ def process_data(x:dict):
                 "registered":registered,
                 "waiting":waiting,
                 "description":description,
-                "professor_name":raw_data["professor_name"],
-                "course_name":persian_to_english_number_regex(raw_data["course_name"]),
+                "professor_name":arabic_to_persian(raw_data["professor_name"]),
+                "course_name":persian_to_english_number_regex(arabic_to_persian(raw_data["course_name"])),
                 "course_number_and_group":course_number_and_group
             })
         else:
