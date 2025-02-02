@@ -8,12 +8,29 @@ from captchaSolver import getCaptchaText
 import json
 from enum import Enum
 import re
-from flask import Flask, jsonify
+from flask import Flask, jsonify,request
 from dotenv import load_dotenv
 import os
+import bcrypt
+from flask_jwt_extended import JWTManager, create_access_token, jwt_required, get_jwt_identity
+from pymongo import MongoClient
+
 load_dotenv()
 
 app = Flask(__name__)
+jwt=JWTManager(app)
+app.config['JWT_SECRET_KEY'] = os.getenv("JWT_SECRET_KEY") 
+MONGO_HOST=os.getenv("MONGO_HOST")
+MONGO_USERNAME=os.getenv("MONGO_USERNAME")
+MONGO_PASSWORD=os.getenv("MONGO_PASSWORD")
+MONGO_PORT=os.getenv("MONGO_PORT")
+MONGO_DBNAME=os.getenv("MONGO_DBNAME")
+MONGO_COLLECTIONNAME=os.getenv("MONGO_COLLECTIONNAME")
+client = MongoClient(f"mongodb://{MONGO_USERNAME}:{MONGO_PASSWORD}@{MONGO_HOST}:{MONGO_PORT}/")
+db = client[MONGO_DBNAME]
+users_collection = db[MONGO_COLLECTIONNAME]
+def verify_password(plain_password, hashed_password):
+    return bcrypt.checkpw(plain_password.encode('utf-8'), hashed_password.encode('utf-8'))
 
 URL=os.getenv("GOLESTAN_URL")
 # URL='https://golestan.iust.ac.ir/forms/authenticateuser/main.htm'
@@ -296,6 +313,7 @@ def login(driver,wait):
 
 
 @app.route("/scrape",methods=['GET'])
+@jwt_required
 def scrape():
     
     driver = webdriver.Firefox()
@@ -347,7 +365,9 @@ def scrape():
     #         json.dump(temp, json_file, indent=4, ensure_ascii=False)  # indent=4 makes it readable
     return "Scraped finished successfully"
 
+# @jwt_required
 @app.route("/processRawData",methods=["GET"])
+@jwt_required()
 def processRawData():
     temp = {}
     with open('department_courses.json', 'r', encoding='utf-8') as file:
@@ -360,6 +380,7 @@ def processRawData():
     return "processing raw data finished successfully"
 
 @app.route('/data',methods=['GET'])
+@jwt_required()
 def data():
     with open("processed_data.json", "r", encoding="utf-8") as file:
         data=json.load(file)        
@@ -367,6 +388,26 @@ def data():
         response.headers["Content-Type"] = "application/json; charset=utf-8"
         return response
 
+@app.route("/register",methods=["POST"])
+def register():
+    data = request.json
+    username=data.get("username")
+    password=data.get("password")
+    if users_collection.find_one({"username":username}):
+        return jsonify({"msg":"user already exists"}),400
 
+    hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt()).decode('utf-8')
+    users_collection.insert_one({"username":username,"password_hash":hashed_password})
+    return jsonify({"msg":"user registered successfully"}),201
+@app.route("/login",methods=["POST"])
+def login():
+    data=request.json
+    username=data.get("username")
+    password=data.get("password")
+    user = users_collection.find_one({"username":username})
+    if user and verify_password(password,user["password_hash"]):
+        access_token = create_access_token(identity=username)
+        return jsonify(access_token=access_token)
+    return jsonify({"msg":"invalid username or password"}),400
 if __name__ == '__main__':
     app.run(debug=True)

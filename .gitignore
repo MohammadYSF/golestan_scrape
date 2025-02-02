@@ -6,3 +6,4 @@ geckodriver
 geckodriver-v0.35.0-linux64.tar.gz
 chromedriver-linux64.zip
 finalized_model.sav
+docker-compose.yml
