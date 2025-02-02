@@ -1,4 +1,5 @@
 from selenium import webdriver
+from selenium.webdriver import FirefoxOptions
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -14,10 +15,11 @@ import os
 import bcrypt
 from flask_jwt_extended import JWTManager, create_access_token, jwt_required, get_jwt_identity
 from pymongo import MongoClient
-
+from flask_cors import CORS
 load_dotenv()
 
 app = Flask(__name__)
+CORS(app)
 jwt=JWTManager(app)
 app.config['JWT_SECRET_KEY'] = os.getenv("JWT_SECRET_KEY") 
 MONGO_HOST=os.getenv("MONGO_HOST")
@@ -29,6 +31,8 @@ MONGO_COLLECTIONNAME=os.getenv("MONGO_COLLECTIONNAME")
 client = MongoClient(f"mongodb://{MONGO_USERNAME}:{MONGO_PASSWORD}@{MONGO_HOST}:{MONGO_PORT}/")
 db = client[MONGO_DBNAME]
 users_collection = db[MONGO_COLLECTIONNAME]
+processed_data_collection=db["processed_data_collection"]
+raw_data_collection=db["raw_data_collection"]
 def verify_password(plain_password, hashed_password):
     return bcrypt.checkpw(plain_password.encode('utf-8'), hashed_password.encode('utf-8'))
 
@@ -68,7 +72,8 @@ departmenet_names_map = {
     "مديريت، اقتصاد و مهندسي پيشرفت":"MANAGEMENT",
     "واحد نور":"NOOR",
     "پرديس دانشگاهي علم و صنعت":"PARDIS",
-    "عمومي":"GENERAL"
+    "عمومي":"GENERAL",
+    "رياضي و علوم كامپيوتر":"MATH"
     
 }
 def arabic_to_persian(text: str) -> str:
@@ -278,7 +283,7 @@ def get_all_courses(departmenets_courses,wait,driver):
     if (current_page != new_current_page):            
         get_all_courses(departmenets_courses,wait,driver)
 
-def login(driver,wait):
+def golestan_login(driver,wait):
     wait.until(EC.frame_to_be_available_and_switch_to_it((By.NAME,"Faci1")))
     wait.until(EC.frame_to_be_available_and_switch_to_it((By.NAME,"Master")))
     wait.until(EC.frame_to_be_available_and_switch_to_it((By.NAME,"Form_Body")))
@@ -302,7 +307,7 @@ def login(driver,wait):
         driver.switch_to.parent_frame() 
         driver.switch_to.parent_frame() 
         if errortext_td_element.text == "لطفا كد امنيتي را به صورت صحيح وارد نماييد":
-            login(driver,wait)
+            golestan_login(driver,wait)
     except:
         driver.switch_to.parent_frame() 
         driver.switch_to.parent_frame() 
@@ -313,10 +318,12 @@ def login(driver,wait):
 
 
 @app.route("/scrape",methods=['GET'])
-@jwt_required
+@jwt_required()
 def scrape():
-    
-    driver = webdriver.Firefox()
+    opts = FirefoxOptions()
+    opts.add_argument("--headless")
+
+    driver = webdriver.Firefox(options=opts)
 
     driver.maximize_window() # For maximizing window
     driver.implicitly_wait(20) # gives an implicit wait for 20 seconds
@@ -326,7 +333,7 @@ def scrape():
 
     time.sleep(5)
 
-    login(driver,wait)
+    golestan_login(driver,wait)
 
     time.sleep(1)
     wait.until(EC.frame_to_be_available_and_switch_to_it((By.NAME,"Faci2")))
@@ -352,9 +359,13 @@ def scrape():
     x = {}
     get_all_courses(x,wait,driver)
     driver.close()
-    
-    with open("department_courses.json", "w", encoding="utf-8") as json_file:
-        json.dump(x, json_file, indent=4, ensure_ascii=False)  # indent=4 makes it readable
+    raw_data_collection.delete_many({})
+    raw_data_collection.insert_one(x)
+    # with open("department_courses.json", "w", encoding="utf-8") as json_file:
+        # json.dump(x, json_file, indent=4, ensure_ascii=False)  # indent=4 makes it readable
+
+
+
 
     # temp = {}
     # with open('department_courses.json', 'r', encoding='utf-8') as file:
@@ -365,28 +376,30 @@ def scrape():
     #         json.dump(temp, json_file, indent=4, ensure_ascii=False)  # indent=4 makes it readable
     return "Scraped finished successfully"
 
-# @jwt_required
 @app.route("/processRawData",methods=["GET"])
 @jwt_required()
 def processRawData():
     temp = {}
-    with open('department_courses.json', 'r', encoding='utf-8') as file:
-        data=json.load(file)
-        for k,v in data.items():
-            temp[departmenet_names_map.get(k,"OTHER")] = process_data(v)
-        with open("processed_data.json", "w", encoding="utf-8") as json_file:
-            json.dump(temp, json_file, indent=4, ensure_ascii=False)  # indent=4 makes it readable
-    print(temp)
+    data = raw_data_collection.find_one({}, {"_id": 0})
+    # with open('department_courses.json', 'r', encoding='utf-8') as file:
+        # data=json.load(file)
+    for k,v in data.items():
+        temp[departmenet_names_map.get(k,"OTHER")] = process_data(v)
+    processed_data_collection.delete_many({})
+    processed_data_collection.insert_one(temp)
+        # with open("processed_data.json", "w", encoding="utf-8") as json_file:
+            # json.dump(temp, json_file, indent=4, ensure_ascii=False)  # indent=4 makes it readable
     return "processing raw data finished successfully"
 
 @app.route('/data',methods=['GET'])
 @jwt_required()
 def data():
-    with open("processed_data.json", "r", encoding="utf-8") as file:
-        data=json.load(file)        
-        response = jsonify(data)
-        response.headers["Content-Type"] = "application/json; charset=utf-8"
-        return response
+    data = processed_data_collection.find_one({}, {"_id": 0})
+    # with open("processed_data.json", "r", encoding="utf-8") as file:
+        # data=json.load(file)        
+    response = jsonify(data)
+    response.headers["Content-Type"] = "application/json; charset=utf-8"
+    return response
 
 @app.route("/register",methods=["POST"])
 def register():
