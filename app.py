@@ -16,7 +16,7 @@ import bcrypt
 from flask_jwt_extended import JWTManager, create_access_token, jwt_required, get_jwt_identity
 from pymongo import MongoClient
 from flask_cors import CORS
-from datetime import datetime,timedelta
+from datetime import datetime,timedelta,timezone
 load_dotenv()
 
 app = Flask(__name__)
@@ -323,10 +323,10 @@ def golestan_login(driver,wait):
 @app.route("/scrape",methods=['GET'])
 @jwt_required()
 def scrape():
-    scrape_start_dt = datetime.now()
+    scrape_start_dt = datetime.now(timezone.utc)
     opts = FirefoxOptions()
-    # opts.add_argument("--headless")
-
+    if (os.getenv("HEADLESS")=="0"):
+        opts.add_argument("--headless")
     driver = webdriver.Firefox(options=opts)
 
     driver.maximize_window() # For maximizing window
@@ -339,7 +339,7 @@ def scrape():
 
     golestan_login(driver,wait)
 
-    time.sleep(1)
+    time.sleep(3)
     wait.until(EC.frame_to_be_available_and_switch_to_it((By.NAME,"Faci2")))
     wait.until(EC.frame_to_be_available_and_switch_to_it((By.NAME,"Master")))
     wait.until(EC.frame_to_be_available_and_switch_to_it((By.NAME,"Form_Body")))
@@ -354,13 +354,14 @@ def scrape():
     time.sleep(3)
     wait.until(EC.frame_to_be_available_and_switch_to_it((By.NAME,"Faci3")))
     wait.until(EC.frame_to_be_available_and_switch_to_it((By.NAME,"Commander")))
+    time.sleep(1)
     view_report_td_btn_element = wait.until(EC.presence_of_element_located((By.ID, "IM16_ViewRep")))
     view_report_td_btn_element.click()
 
     driver.switch_to.parent_frame()
     driver.switch_to.parent_frame()
     driver.switch_to.parent_frame()
-    time.sleep(1)
+    time.sleep(3)
     x = {}
     get_all_courses(x,wait,driver)
     driver.close()
