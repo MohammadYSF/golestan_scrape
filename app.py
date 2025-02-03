@@ -19,6 +19,12 @@ from flask_cors import CORS
 from datetime import datetime,timedelta,timezone
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.jobstores.mongodb import MongoDBJobStore
+import atexit
+
+
+
+
+
 
 load_dotenv()
 
@@ -36,8 +42,6 @@ MONGO_DBNAME=os.getenv("MONGO_DBNAME")
 MONGO_COLLECTIONNAME=os.getenv("MONGO_COLLECTIONNAME")
 client = MongoClient(f"mongodb://{MONGO_USERNAME}:{MONGO_PASSWORD}@{MONGO_HOST}:{MONGO_PORT}/")
 job_store = MongoDBJobStore(client=client, database="scheduler_db")
-scheduler = BackgroundScheduler(jobstores={'default': job_store})
-scheduler.start()
 
 db = client[MONGO_DBNAME]
 users_collection = db[MONGO_COLLECTIONNAME]
@@ -404,6 +408,8 @@ def data():
     response = jsonify(data)
     response.headers["Content-Type"] = "application/json; charset=utf-8"
     return response
+
+
 @app.route("/userCourses",methods=["POST"])
 @jwt_required()
 def addCourse():
@@ -459,7 +465,17 @@ def login():
         access_token = create_access_token(identity=username)
         return jsonify(access_token=access_token)
     return jsonify({"msg":"invalid username or password"}),400
-if __name__ == '__main__':
+
+
+def start_scheduler():
+    scheduler = BackgroundScheduler(jobstores={'default': job_store})
     scheduler.add_job(scrape, 'interval', minutes=10)  
-    scheduler.add_job(processRawData, 'interval', minutes=3) 
+    scheduler.add_job(processRawData, 'interval', seconds=50) 
+    scheduler.start()
+
+    # Shut down the scheduler when exiting the app
+    atexit.register(lambda: scheduler.shutdown())
+    
+start_scheduler()
+if __name__ == '__main__':
     app.run(debug=True)
