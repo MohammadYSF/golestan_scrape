@@ -17,6 +17,9 @@ from flask_jwt_extended import JWTManager, create_access_token, jwt_required, ge
 from pymongo import MongoClient
 from flask_cors import CORS
 from datetime import datetime,timedelta,timezone
+from apscheduler.schedulers.background import BackgroundScheduler
+from apscheduler.jobstores.mongodb import MongoDBJobStore
+
 load_dotenv()
 
 app = Flask(__name__)
@@ -32,6 +35,10 @@ MONGO_PORT=os.getenv("MONGO_PORT")
 MONGO_DBNAME=os.getenv("MONGO_DBNAME")
 MONGO_COLLECTIONNAME=os.getenv("MONGO_COLLECTIONNAME")
 client = MongoClient(f"mongodb://{MONGO_USERNAME}:{MONGO_PASSWORD}@{MONGO_HOST}:{MONGO_PORT}/")
+job_store = MongoDBJobStore(client=client, database="scheduler_db")
+scheduler = BackgroundScheduler(jobstores={'default': job_store})
+scheduler.start()
+
 db = client[MONGO_DBNAME]
 users_collection = db[MONGO_COLLECTIONNAME]
 processed_data_collection=db["processed_data_collection"]
@@ -317,11 +324,23 @@ def golestan_login(driver,wait):
 
 
 
+# @app.route("/processRawData",methods=["GET"])
+# @jwt_required()
+def processRawData():
+    temp = {}
+    data = raw_data_collection.find_one({}, {"_id": 0})
+    for k,v in  data.items():
+        if (k == SCRAPE_DATETIME):continue
+        temp[departmenet_names_map.get(k,"OTHER")] = process_data(v)
+    processed_data_collection.delete_many({})
+    processed_data_collection.insert_one({**temp,SCRAPE_DATETIME:data[SCRAPE_DATETIME]})
+    return "processing raw data finished successfully"
 
 
 
-@app.route("/scrape",methods=['GET'])
-@jwt_required()
+
+# @app.route("/scrape",methods=['GET'])
+# @jwt_required()
 def scrape():
     scrape_start_dt = datetime.now(timezone.utc)
     opts = FirefoxOptions()
@@ -367,19 +386,9 @@ def scrape():
     driver.close()
     raw_data_collection.delete_many({})
     raw_data_collection.insert_one({**x,SCRAPE_DATETIME:scrape_start_dt})
+    
+    # processRawData()
     return "Scraped finished successfully"
-
-@app.route("/processRawData",methods=["GET"])
-@jwt_required()
-def processRawData():
-    temp = {}
-    data = raw_data_collection.find_one({}, {"_id": 0})
-    for k,v in  data.items():
-        if (k == SCRAPE_DATETIME):continue
-        temp[departmenet_names_map.get(k,"OTHER")] = process_data(v)
-    processed_data_collection.delete_many({})
-    processed_data_collection.insert_one({**temp,SCRAPE_DATETIME:data[SCRAPE_DATETIME]})
-    return "processing raw data finished successfully"
 
 @app.route('/data',methods=['GET'])
 @jwt_required()
@@ -411,4 +420,6 @@ def login():
         return jsonify(access_token=access_token)
     return jsonify({"msg":"invalid username or password"}),400
 if __name__ == '__main__':
+    scheduler.add_job(scrape, 'interval', minutes=10)  
+    scheduler.add_job(processRawData, 'interval', minutes=3) 
     app.run(debug=True)

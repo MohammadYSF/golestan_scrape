@@ -13,3 +13,4 @@ scikit-learn==1.6.1
 selenium==4.28.1
 setuptools==68.1.2
 Flask-Cors==5.0.0
+APScheduler=3.11.0
