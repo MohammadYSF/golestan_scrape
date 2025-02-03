@@ -397,6 +397,38 @@ def data():
     response = jsonify(data)
     response.headers["Content-Type"] = "application/json; charset=utf-8"
     return response
+@app.route("/addCourse",methods=["POST"])
+@jwt_required()
+def add_course():
+    if not request.is_json:
+        return jsonify({"msg":"invalid format"}),400
+    data = request.get_json()
+    if not isinstance(data, list) or not all(isinstance(item, str) for item in data):
+        return jsonify({"error": "Request body must be a list of strings"}), 400
+    username = get_jwt_identity()
+    user = users_collection.find_one({"username":username})
+    existing_courses = user.get("courses",[])
+    updated_courses = list(set(existing_courses+data))
+    users_collection.update_one({"username":username},{"$set":{"courses":updated_courses}})
+    return jsonify(updated_courses),200
+
+@app.route("/removeCourse",methods=["POST"])
+@jwt_required()
+def remove_course():
+    if not request.is_json:
+        return jsonify({"msg":"invalid format"}),400
+    data = request.get_json()
+    if not isinstance(data, list) or not all(isinstance(item, str) for item in data):
+        return jsonify({"msg": "Request body must be a list of strings"}), 400
+    username = get_jwt_identity()
+    user = users_collection.find_one({"username":username})
+    if not user:
+        return jsonify({"msg":"user not found!"}),404
+    existing_courses = user.get("courses",[])
+    updated_courses = [course for course in existing_courses if course not in data]
+    users_collection.update_one({"username":username},{"$set":{"courses":updated_courses}})
+    return jsonify(updated_courses),200
+
 
 @app.route("/register",methods=["POST"])
 def register():
