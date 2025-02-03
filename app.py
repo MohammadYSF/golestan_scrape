@@ -390,6 +390,13 @@ def scrape():
     # processRawData()
     return "Scraped finished successfully"
 
+@app.route("/userCourses",methods=["GET"])
+@jwt_required()
+def getUserCourses():
+    jwt_payload = get_jwt_identity()    
+    user = users_collection.find_one({"username":jwt_payload})
+    return jsonify(user.get("courses",[]))
+
 @app.route('/data',methods=['GET'])
 @jwt_required()
 def data():
@@ -397,36 +404,36 @@ def data():
     response = jsonify(data)
     response.headers["Content-Type"] = "application/json; charset=utf-8"
     return response
-@app.route("/addCourse",methods=["POST"])
+@app.route("/userCourses",methods=["POST"])
 @jwt_required()
-def add_course():
+def addCourse():
     if not request.is_json:
         return jsonify({"msg":"invalid format"}),400
     data = request.get_json()
     if not isinstance(data, list) or not all(isinstance(item, str) for item in data):
         return jsonify({"error": "Request body must be a list of strings"}), 400
-    username = get_jwt_identity()
-    user = users_collection.find_one({"username":username})
+    jwt_payload = get_jwt_identity()
+    user = users_collection.find_one({"username":jwt_payload})
     existing_courses = user.get("courses",[])
     updated_courses = list(set(existing_courses+data))
-    users_collection.update_one({"username":username},{"$set":{"courses":updated_courses}})
+    users_collection.update_one({"username":jwt_payload},{"$set":{"courses":updated_courses}})
     return jsonify(updated_courses),200
 
-@app.route("/removeCourse",methods=["POST"])
+@app.route("/userCourses",methods=["PUT"])
 @jwt_required()
-def remove_course():
+def removeCourse():
     if not request.is_json:
         return jsonify({"msg":"invalid format"}),400
     data = request.get_json()
     if not isinstance(data, list) or not all(isinstance(item, str) for item in data):
         return jsonify({"msg": "Request body must be a list of strings"}), 400
-    username = get_jwt_identity()
-    user = users_collection.find_one({"username":username})
+    jwt_payload = get_jwt_identity()
+    user = users_collection.find_one({"username":jwt_payload})
     if not user:
         return jsonify({"msg":"user not found!"}),404
     existing_courses = user.get("courses",[])
     updated_courses = [course for course in existing_courses if course not in data]
-    users_collection.update_one({"username":username},{"$set":{"courses":updated_courses}})
+    users_collection.update_one({"username":jwt_payload},{"$set":{"courses":updated_courses}})
     return jsonify(updated_courses),200
 
 
@@ -448,6 +455,7 @@ def login():
     password=data.get("password")
     user = users_collection.find_one({"username":username})
     if user and verify_password(password,user["password_hash"]):
+        
         access_token = create_access_token(identity=username)
         return jsonify(access_token=access_token)
     return jsonify({"msg":"invalid username or password"}),400
