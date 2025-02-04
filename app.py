@@ -42,7 +42,7 @@ MONGO_DBNAME=os.getenv("MONGO_DBNAME")
 MONGO_COLLECTIONNAME=os.getenv("MONGO_COLLECTIONNAME")
 client = MongoClient(f"mongodb://{MONGO_USERNAME}:{MONGO_PASSWORD}@{MONGO_HOST}:{MONGO_PORT}/")
 job_store = MongoDBJobStore(client=client, database="scheduler_db")
-
+job_store.remove_all_jobs()
 db = client[MONGO_DBNAME]
 users_collection = db[MONGO_COLLECTIONNAME]
 processed_data_collection=db["processed_data_collection"]
@@ -62,7 +62,7 @@ REPORT_NUMBER=102
 
 weekday_map = {
     "شنبه": "SATURDAY",
-    "یک شنبه": "SUNDAY",
+    "يك شنبه": "SUNDAY",
     "دوشنبه": "MONDAY",
     "سه شنبه": "TUESDAY",
     "چهارشنبه": "WEDNESDAY",
@@ -81,7 +81,7 @@ departmenet_names_map = {
     "مهندسي عمران":"CIVIL_ENG",
     "مهندسي كامپيوتر":"COMPUTER_ENG",
     "تربيت بدني":"PHYSICALEDU",
-    "معارف اسلامي و ادبيات ":"ISLAMICEDU",
+    "معارف اسلامي و ادبيات فارسي":"ISLAMICEDU",
     "شيمي":"CHEMISTRY",
     "مديريت، اقتصاد و مهندسي پيشرفت":"MANAGEMENT",
     "واحد نور":"NOOR",
@@ -185,9 +185,9 @@ def process_data(x:dict):
         else:
             print("unknown can_be_taken_by_guests text found")
 
-        total_unit = int(persian_to_english_number_regex(arabic_to_persian(raw_data["total_unit"]))) if len(raw_data["total_unit"])>0 else 0
-        practical_unit = int(persian_to_english_number_regex(arabic_to_persian(raw_data["practical_unit"]))) if len(raw_data["practical_unit"])>0 else 0
-        capacity = int(persian_to_english_number_regex(arabic_to_persian(raw_data["capacity"]))) if len(raw_data["capacity"])>0 else 0
+        total_unit = float(persian_to_english_number_regex(arabic_to_persian(raw_data["total_unit"].replace("/",".")))) if len(raw_data["total_unit"])>0 else 0
+        practical_unit = float(persian_to_english_number_regex(arabic_to_persian(raw_data["practical_unit"].replace("/",".")))) if len(raw_data["practical_unit"])>0 else 0
+        capacity = float(persian_to_english_number_regex(arabic_to_persian(raw_data["capacity"]))) if len(raw_data["capacity"])>0 else 0
         registered = int(persian_to_english_number_regex(arabic_to_persian(raw_data["registered"]))) if len(raw_data["registered"])>0 else 0
         waiting = int(persian_to_english_number_regex(arabic_to_persian(raw_data["waiting"]))) if len(raw_data["waiting"])>0 else 0
         course_number_and_group = persian_to_english_number_regex(arabic_to_persian(raw_data["course_number_and_group"])) 
@@ -203,20 +203,18 @@ def process_data(x:dict):
 
 
 
-        pattern = r"(\w+)\s(\d{2}:\d{2})-(\d{2}:\d{2})"
-        matches = re.findall(pattern, raw_data["lecture_location_and_time_info"])
+        pattern = re.compile(r"درس\((?P<type>ت|ع)\): (?P<day>.+?) (?P<start>\d{2}:\d{2})-(?P<end>\d{2}:\d{2})")
         schedules = []
 
-        for match in matches:
-            day, start_time, end_time = match
-            
-            start_time = persian_to_english_number_regex(arabic_to_persian(start_time))
-            end_time = persian_to_english_number_regex(arabic_to_persian(end_time))
-
+        for match in pattern.finditer(raw_data["lecture_location_and_time_info"]):
+            is_theory = match.group("type") == "ت"
+            start_time = persian_to_english_number_regex(arabic_to_persian(match.group("start")))
+            end_time = persian_to_english_number_regex(arabic_to_persian(match.group("end")))
             schedules.append({
-                "day_of_week": weekday_map.get(day),
+                "day_of_week": weekday_map.get(match.group("day")),
                 "start_time": start_time,
-                "end_time": end_time
+                "end_time": end_time,
+                "is_theory":is_theory
             })
         if len(course_number_and_group)>0:
             processed_data_arr.append({
@@ -279,7 +277,7 @@ def get_all_courses(departmenets_courses,wait,driver):
     if (departmenet_name not in  departmenets_courses.keys()):
         departmenets_courses[departmenet_name] = courses
     else:
-        departmenets_courses[departmenet_name].append(course)
+        departmenets_courses[departmenet_name].extend(courses)
     driver.switch_to.parent_frame()
     driver.switch_to.parent_frame()
     driver.switch_to.parent_frame()
@@ -348,7 +346,7 @@ def processRawData():
 def scrape():
     scrape_start_dt = datetime.now(timezone.utc)
     opts = FirefoxOptions()
-    if (os.getenv("HEADLESS")=="0"):
+    if (os.getenv("HEADLESS")=="1"):
         opts.add_argument("--headless")
     driver = webdriver.Firefox(options=opts)
 
@@ -391,7 +389,7 @@ def scrape():
     raw_data_collection.delete_many({})
     raw_data_collection.insert_one({**x,SCRAPE_DATETIME:scrape_start_dt})
     
-    # processRawData()
+    processRawData()
     return "Scraped finished successfully"
 
 @app.route("/userCourses",methods=["GET"])
@@ -467,15 +465,17 @@ def login():
     return jsonify({"msg":"invalid username or password"}),400
 
 
-def start_scheduler():
-    scheduler = BackgroundScheduler(jobstores={'default': job_store})
-    scheduler.add_job(scrape, 'interval', minutes=10)  
-    scheduler.add_job(processRawData, 'interval', seconds=50) 
-    scheduler.start()
-
-    # Shut down the scheduler when exiting the app
-    atexit.register(lambda: scheduler.shutdown())
+scheduler = BackgroundScheduler(jobstores={'default': job_store})
+scheduler.add_job(scrape, 'interval', seconds=60*10)  
+scheduler.add_job(processRawData, 'interval', seconds=30) 
     
-start_scheduler()
+# scrape()
 if __name__ == '__main__':
     app.run(debug=True)
+    
+with app.app_context():
+    scheduler.start()
+
+# @app.teardown_appcontext
+# def stop_scheduler(exception=None):
+#     scheduler.shutdown()
