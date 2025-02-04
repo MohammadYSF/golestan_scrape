@@ -39,12 +39,12 @@ MONGO_USERNAME=os.getenv("MONGO_USERNAME")
 MONGO_PASSWORD=os.getenv("MONGO_PASSWORD")
 MONGO_PORT=os.getenv("MONGO_PORT")
 MONGO_DBNAME=os.getenv("MONGO_DBNAME")
-MONGO_COLLECTIONNAME=os.getenv("MONGO_COLLECTIONNAME")
+MONGO_USERS_COLLECTIONNAME="users"
 client = MongoClient(f"mongodb://{MONGO_USERNAME}:{MONGO_PASSWORD}@{MONGO_HOST}:{MONGO_PORT}/")
 job_store = MongoDBJobStore(client=client, database="scheduler_db")
 job_store.remove_all_jobs()
 db = client[MONGO_DBNAME]
-users_collection = db[MONGO_COLLECTIONNAME]
+users_collection = db[MONGO_USERS_COLLECTIONNAME]
 processed_data_collection=db["processed_data_collection"]
 raw_data_collection=db["raw_data_collection"]
 def verify_password(plain_password, hashed_password):
