@@ -478,6 +478,7 @@ if __name__ == '__main__':
     
 with app.app_context():
     scheduler.start()
+    scrape()
 
 # @app.teardown_appcontext
 # def stop_scheduler(exception=None):
