@@ -331,6 +331,9 @@ def golestan_login(driver,wait):
 def processRawData():
     temp = {}
     data = raw_data_collection.find_one({}, {"_id": 0})
+    if (data == None):
+        print("no data to process")
+        return
     for k,v in  data.items():
         if (k == SCRAPE_DATETIME):continue
         temp[departmenet_names_map.get(k,"OTHER")] = process_data(v)
