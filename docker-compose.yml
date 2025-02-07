@@ -12,7 +12,7 @@ services:
     env_file:
       - .env
   mongo:
-    image: mongo:latest
+    image: mongo:4.4
     container_name: elmostime_mongodb
     ports:
       - "27017:27017"
