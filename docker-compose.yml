@@ -1,0 +1,25 @@
+# version: '3.8'
+services:
+  app:
+    build: .
+    container_name: elmostime_flaskapi
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    depends_on:
+      - mongo
+    env_file:
+      - .env
+  mongo:
+    image: mongo:latest
+    container_name: elmostime_mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    env_file:
+      - .env
+
+volumes:
+  mongo-data:
