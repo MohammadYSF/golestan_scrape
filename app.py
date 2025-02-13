@@ -302,12 +302,16 @@ def golestan_login(driver,wait):
     student_number_input_element = wait.until(EC.presence_of_element_located((By.ID, "F80351")))
     national_id_input_element = wait.until(EC.presence_of_element_located((By.ID, "F80401")))
     captcha_input_element = wait.until(EC.presence_of_element_located((By.ID, "F51701")))
+    student_number_input_element.clear()
     student_number_input_element.send_keys(STUDENT_NUMBER)
+    national_id_input_element.clear()
     national_id_input_element.send_keys(NATIONAL_ID)
     login_btn_element = wait.until(EC.presence_of_element_located((By.ID, "btnLog")))
     captcha_image_element = wait.until(EC.presence_of_element_located((By.ID, "imgCaptcha")))
     captcha_image_element.screenshot("captcha.png")
     captcha_text = getCaptchaText("captcha.png")
+    print("captcha text is : ",captcha_text)
+    captcha_input_element.clear()
     captcha_input_element.send_keys(captcha_text)
     login_btn_element.click()
     driver.switch_to.parent_frame()
@@ -316,11 +320,14 @@ def golestan_login(driver,wait):
     wait.until(EC.frame_to_be_available_and_switch_to_it((By.NAME,"Message")))
     try:
         errortext_td_element = driver.find_element(By.ID, "errtxt")
+        errortext = errortext_td_element.text
+        
         driver.switch_to.parent_frame() 
         driver.switch_to.parent_frame() 
-        if errortext_td_element.text == "لطفا كد امنيتي را به صورت صحيح وارد نماييد":
+        if errortext == "لطفا كد امنيتي را به صورت صحيح وارد نماييد":
             golestan_login(driver,wait)
-    except:
+    except Exception as e:
+        print("error : ",e)
         driver.switch_to.parent_frame() 
         driver.switch_to.parent_frame() 
 
@@ -358,7 +365,6 @@ def scrape():
     wait = WebDriverWait(driver, 10)
 
     driver.get(URL)
-
     time.sleep(5)
 
     golestan_login(driver,wait)
@@ -478,7 +484,7 @@ if __name__ == '__main__':
     
 with app.app_context():
     scheduler.start()
-    scrape()
+    #scrape()
 
 # @app.teardown_appcontext
 # def stop_scheduler(exception=None):
