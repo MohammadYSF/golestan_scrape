@@ -514,6 +514,33 @@ def get_departments():
     ]
 
 
+@app.route("/summary", methods=["GET"])
+@jwt_required()
+def summary():
+    jwt_payload = get_jwt_identity()
+    user = users_collection.find_one({"username": jwt_payload})
+    user_courses = user.get("courses", [])
+    data = processed_data_collection.find_one({}, {"_id": 0})
+    flatten_data = [item for value in data.values() for item in value]
+
+    return {
+        "total_unit": sum(
+            item["total_unit"]
+            for item in flatten_data
+            if item["course_number_and_group"] in user_courses
+        ),
+        "data": [
+            {
+                "course_number_and_group": item["course_number_and_group"],
+                "course_name": item["course_name"],
+                "unit": item["total_unit"],
+            }
+            for item in flatten_data
+            if item["course_number_and_group" in user_courses]
+        ],
+    }
+
+
 @app.route("/userCourses", methods=["GET"])
 @jwt_required()
 def getUserCourses():
@@ -598,7 +625,7 @@ def login():
     password = data.get("password")
     user = users_collection.find_one({"username": username})
     if user and verify_password(password, user["password_hash"]):
-        additional_claims = {"department": user["department"]}
+        additional_claims = {"department": user.get("department", "")}
         access_token = create_access_token(
             identity=username, additional_claims=additional_claims
         )
