@@ -591,6 +591,7 @@ def summary():
                 "course_number_and_group": item["course_number_and_group"],
                 "course_name": item["course_name"],
                 "unit": item["total_unit"],
+                "lecture_location_and_time_info":item["lecture_location_and_time_info"]
             }
             for item in flatten_data
             if item["course_number_and_group"] in user_courses
