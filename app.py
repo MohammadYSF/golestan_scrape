@@ -310,9 +310,8 @@ def process_data(x: dict, department: str):
             )
 
         pattern = re.compile(
-            r"درس\((?P<type>ت|ع)\): (?P<day>.+?) (?P<start>\d{2}:\d{2})-(?P<end>\d{2}:\d{2}) مکان: .*?(?:کلاس شماره (?P<class_number>\d+))?"
+            r"درس\((?P<type>ت|ع)\): (?P<day>.+?) (?P<start>\d{2}:\d{2})-(?P<end>\d{2}:\d{2})"
         )
-
         schedules = []
 
         for match in pattern.finditer(raw_data["lecture_location_and_time_info"]):
@@ -323,16 +322,12 @@ def process_data(x: dict, department: str):
             end_time = persian_to_english_number_regex(
                 arabic_to_persian(match.group("end"))
             )
-            class_number = persian_to_english_number_regex(
-                arabic_to_persian(match.group("class_number"))
-            )
             schedules.append(
                 {
                     "day_of_week": weekday_map.get(match.group("day")),
                     "start_time": start_time,
                     "end_time": end_time,
                     "is_theory": is_theory,
-                    "class_number": class_number,
                 }
             )
         if len(course_number_and_group) > 0:
@@ -360,7 +355,9 @@ def process_data(x: dict, department: str):
                 "course_name": course_name,
                 "course_number_and_group": course_number_and_group,
                 "can_delete_in_addordelete": can_delete_in_addordelete,
-                "lecture_location_and_time_info":persian_to_english_number_regex(arabic_to_persian(raw_data["lecture_location_and_time_info"]))
+                "lecture_location_and_time_info": persian_to_english_number_regex(
+                    arabic_to_persian(raw_data["lecture_location_and_time_info"])
+                ),
             }
             ta_schedule = process_data_ta_schedule(description)
             if ta_schedule:
@@ -594,7 +591,6 @@ def summary():
                 "course_number_and_group": item["course_number_and_group"],
                 "course_name": item["course_name"],
                 "unit": item["total_unit"],
-                "lecture_location_and_time_info":item["lecture_location_and_time_info"]
             }
             for item in flatten_data
             if item["course_number_and_group"] in user_courses
