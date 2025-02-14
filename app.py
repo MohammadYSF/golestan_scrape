@@ -222,7 +222,7 @@ def process_data(x: dict, department: str):
         else:
             print("unknown course sex found")
         can_delete_in_addordelete = True
-        if (raw_data["description"] = "حذف درس توسط آموزش گروه معارف امکان ندارد. در انتخاب درس و گروه دقت نمایید."):
+        if (raw_data["description"] == "حذف درس توسط آموزش گروه معارف امکان ندارد. در انتخاب درس و گروه دقت نمایید."):
             can_delete_in_addordelete = False
         can_emergency_delete = True
         if raw_data["can_emergency_delete"] == "خیر":
