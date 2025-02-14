@@ -193,7 +193,7 @@ def process_data_ta_schedule(description: str):
         day = match.group(1)
         class_number = match.group(5)
         time = match.group(2)
-        start_str, end_str = time.split("-")
+        end_str, start_str = time.split("-")
         start_time = ""
         end_time = ""
         if ":" not in start_str:
@@ -209,8 +209,9 @@ def process_data_ta_schedule(description: str):
         return ta_schedule
     return None
 
+
 def process_data(x: dict, department: str):
-    
+
     processed_data_arr = []
     for raw_data in x:
         processed_sex = Sex.UNKNOWN
@@ -226,7 +227,10 @@ def process_data(x: dict, department: str):
             arabic_to_persian(raw_data["description"])
         )
         can_delete_in_addordelete = True
-        if (description == "حذف درس توسط آموزش گروه معارف امکان ندارد. در انتخاب درس و گروه دقت نمایید."):
+        if (
+            description
+            == "حذف درس توسط آموزش گروه معارف امکان ندارد. در انتخاب درس و گروه دقت نمایید."
+        ):
             can_delete_in_addordelete = False
         can_emergency_delete = True
         if raw_data["can_emergency_delete"] == "خیر":
@@ -286,7 +290,7 @@ def process_data(x: dict, department: str):
         course_number_and_group = persian_to_english_number_regex(
             arabic_to_persian(raw_data["course_number_and_group"])
         )
-        
+
         exam_date = ""
         exam_start_time = ""
         exam_end_time = ""
@@ -331,12 +335,7 @@ def process_data(x: dict, department: str):
                 arabic_to_persian(raw_data["course_name"])
             )
             if department == "PHYSICALEDU":
-                course_name = (
-                    course_name
-                    + " ("
-                    + description
-                    + ")"
-                )
+                course_name = course_name + " (" + description + ")"
 
             obj = {
                 "sex": processed_sex.name,
@@ -355,7 +354,7 @@ def process_data(x: dict, department: str):
                 "professor_name": arabic_to_persian(raw_data["professor_name"]),
                 "course_name": course_name,
                 "course_number_and_group": course_number_and_group,
-                "can_delete_in_addordelete":can_delete_in_addordelete
+                "can_delete_in_addordelete": can_delete_in_addordelete,
             }
             ta_schedule = process_data_ta_schedule(description)
             if ta_schedule:
@@ -690,7 +689,7 @@ def login():
 
 scheduler = BackgroundScheduler(jobstores={"default": job_store})
 scheduler.add_job(scrape, "interval", seconds=60 * 10)
-scheduler.add_job(processRawData, "interval", seconds=3*60)
+scheduler.add_job(processRawData, "interval", seconds=3 * 60)
 
 # scrape()
 if __name__ == "__main__":
