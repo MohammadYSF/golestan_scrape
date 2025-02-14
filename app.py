@@ -590,7 +590,7 @@ def summary():
                 "unit": item["total_unit"],
             }
             for item in flatten_data
-            if item["course_number_and_group" in user_courses]
+            if item["course_number_and_group"] in user_courses
         ],
     }
 
