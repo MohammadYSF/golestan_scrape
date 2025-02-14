@@ -570,7 +570,12 @@ def summary():
     user = users_collection.find_one({"username": jwt_payload})
     user_courses = user.get("courses", [])
     data = processed_data_collection.find_one({}, {"_id": 0})
-    flatten_data = [item for value in data.values() for item in value]
+    flatten_data = [
+        item
+        for key, value in data.items()
+        if key != "scrape_datetime"
+        for item in value
+    ]
 
     return {
         "total_unit": sum(
