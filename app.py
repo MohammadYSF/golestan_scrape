@@ -210,6 +210,7 @@ def process_data_ta_schedule(description: str):
     return None
 
 def process_data(x: dict, department: str):
+    
     processed_data_arr = []
     for raw_data in x:
         processed_sex = Sex.UNKNOWN
@@ -221,8 +222,11 @@ def process_data(x: dict, department: str):
             processed_sex = Sex.FEMALE
         else:
             print("unknown course sex found")
+        description = persian_to_english_number_regex(
+            arabic_to_persian(raw_data["description"])
+        )
         can_delete_in_addordelete = True
-        if (raw_data["description"] == "حذف درس توسط آموزش گروه معارف امکان ندارد. در انتخاب درس و گروه دقت نمایید."):
+        if (description == "حذف درس توسط آموزش گروه معارف امکان ندارد. در انتخاب درس و گروه دقت نمایید."):
             can_delete_in_addordelete = False
         can_emergency_delete = True
         if raw_data["can_emergency_delete"] == "خیر":
@@ -282,9 +286,7 @@ def process_data(x: dict, department: str):
         course_number_and_group = persian_to_english_number_regex(
             arabic_to_persian(raw_data["course_number_and_group"])
         )
-        description = persian_to_english_number_regex(
-            arabic_to_persian(raw_data["description"])
-        )
+        
         exam_date = ""
         exam_start_time = ""
         exam_end_time = ""
@@ -332,7 +334,7 @@ def process_data(x: dict, department: str):
                 course_name = (
                     course_name
                     + " ("
-                    + arabic_to_persian(raw_data["description"])
+                    + description
                     + ")"
                 )
 
@@ -355,7 +357,7 @@ def process_data(x: dict, department: str):
                 "course_number_and_group": course_number_and_group,
                 "can_delete_in_addordelete":can_delete_in_addordelete
             }
-            ta_schedule = process_data_ta_schedule(raw_data["description"])
+            ta_schedule = process_data_ta_schedule(description)
             if ta_schedule:
                 obj["ta_schedule"] = ta_schedule
             processed_data_arr.append(obj)
