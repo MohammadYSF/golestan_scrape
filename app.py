@@ -310,8 +310,9 @@ def process_data(x: dict, department: str):
             )
 
         pattern = re.compile(
-            r"درس\((?P<type>ت|ع)\): (?P<day>.+?) (?P<start>\d{2}:\d{2})-(?P<end>\d{2}:\d{2})"
+            r"درس\((?P<type>ت|ع)\): (?P<day>.+?) (?P<start>\d{2}:\d{2})-(?P<end>\d{2}:\d{2}) مکان: .+? کلاس شماره (?P<class_number>\d+)"
         )
+
         schedules = []
 
         for match in pattern.finditer(raw_data["lecture_location_and_time_info"]):
@@ -322,12 +323,16 @@ def process_data(x: dict, department: str):
             end_time = persian_to_english_number_regex(
                 arabic_to_persian(match.group("end"))
             )
+            class_number = persian_to_english_number_regex(
+                arabic_to_persian(match.group("class_number"))
+            )
             schedules.append(
                 {
                     "day_of_week": weekday_map.get(match.group("day")),
                     "start_time": start_time,
                     "end_time": end_time,
                     "is_theory": is_theory,
+                    "class_number": class_number
                 }
             )
         if len(course_number_and_group) > 0:
