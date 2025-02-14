@@ -690,7 +690,7 @@ def login():
 
 scheduler = BackgroundScheduler(jobstores={"default": job_store})
 scheduler.add_job(scrape, "interval", seconds=60 * 10)
-scheduler.add_job(processRawData, "interval", seconds=30)
+scheduler.add_job(processRawData, "interval", seconds=3*60)
 
 # scrape()
 if __name__ == "__main__":
@@ -698,6 +698,7 @@ if __name__ == "__main__":
 
 with app.app_context():
     scheduler.start()
+    processRawData()
     # scrape()
 
 # @app.teardown_appcontext
