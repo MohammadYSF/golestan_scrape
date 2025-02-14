@@ -177,7 +177,39 @@ class Sex(Enum):
 captcha_predictor_model = pickle.load(open("finalized_model.sav", "rb"))
 
 
-def process_data(x: dict):
+def process_data_ta_schedule(description: str):
+    pattern = r"(یکشنبه|دوشنبه|سه شنبه|چهارشنبه|پنج شنبه|جمعه|شنبه).*?(\d{1,2}(:\d{2})?-\d{1,2}(:\d{2})?).*?کلاس شماره (\d+)"
+    ta_weekday_map = {
+        "شنبه": "SATURDAY",
+        "یکشنبه": "SUNDAY",
+        "دوشنبه": "MONDAY",
+        "سه شنبه": "TUESDAY",
+        "چهارشنبه": "WEDNESDAY",
+        "پنجشنبه": "THURSDAY",
+        "جمعه": "FRIDAY",
+    }
+    match = re.search(pattern, arabic_to_persian(description))
+    if match:
+        day = match.group(1)
+        class_number = match.group(5)
+        time = match.group(2)
+        start_str, end_str = time.split("-")
+        start_time = ""
+        end_time = ""
+        if ":" not in start_str:
+            start_time = f"{start_str}:00"
+        if ":" not in end_str:
+            end_time = f"{end_str}:00"
+        ta_schedule = {
+            "class_number": class_number,
+            "start_time": start_time,
+            "end_time": end_time,
+            "day_of_week": ta_weekday_map.get(arabic_to_persian(day), ""),
+        }
+        return ta_schedule
+    return None
+
+def process_data(x: dict, department: str):
     processed_data_arr = []
     for raw_data in x:
         processed_sex = Sex.UNKNOWN
@@ -189,7 +221,9 @@ def process_data(x: dict):
             processed_sex = Sex.FEMALE
         else:
             print("unknown course sex found")
-
+        can_delete_in_addordelete = True
+        if (raw_data["description"] = "حذف درس توسط آموزش گروه معارف امکان ندارد. در انتخاب درس و گروه دقت نمایید."):
+            can_delete_in_addordelete = False
         can_emergency_delete = True
         if raw_data["can_emergency_delete"] == "خیر":
             can_emergency_delete = False
@@ -291,28 +325,40 @@ def process_data(x: dict):
                 }
             )
         if len(course_number_and_group) > 0:
-            processed_data_arr.append(
-                {
-                    "sex": processed_sex.name,
-                    "lecture_schedules": schedules,
-                    "exam_date": exam_date,
-                    "exam_start_time": exam_start_time,
-                    "exam_end_time": exam_end_time,
-                    "can_emergency_delete": can_emergency_delete,
-                    "can_be_taken_by_guests": can_be_taken_by_guests,
-                    "total_unit": total_unit,
-                    "practical_unit": practical_unit,
-                    "capacity": capacity,
-                    "registered": registered,
-                    "waiting": waiting,
-                    "description": description,
-                    "professor_name": arabic_to_persian(raw_data["professor_name"]),
-                    "course_name": persian_to_english_number_regex(
-                        arabic_to_persian(raw_data["course_name"])
-                    ),
-                    "course_number_and_group": course_number_and_group,
-                }
+            course_name = persian_to_english_number_regex(
+                arabic_to_persian(raw_data["course_name"])
             )
+            if department == "PHYSICALEDU":
+                course_name = (
+                    course_name
+                    + " ("
+                    + arabic_to_persian(raw_data["description"])
+                    + ")"
+                )
+
+            obj = {
+                "sex": processed_sex.name,
+                "lecture_schedules": schedules,
+                "exam_date": exam_date,
+                "exam_start_time": exam_start_time,
+                "exam_end_time": exam_end_time,
+                "can_emergency_delete": can_emergency_delete,
+                "can_be_taken_by_guests": can_be_taken_by_guests,
+                "total_unit": total_unit,
+                "practical_unit": practical_unit,
+                "capacity": capacity,
+                "registered": registered,
+                "waiting": waiting,
+                "description": description,
+                "professor_name": arabic_to_persian(raw_data["professor_name"]),
+                "course_name": course_name,
+                "course_number_and_group": course_number_and_group,
+                "can_delete_in_addordelete":can_delete_in_addordelete
+            }
+            ta_schedule = process_data_ta_schedule(raw_data["description"])
+            if ta_schedule:
+                obj["ta_schedule"] = ta_schedule
+            processed_data_arr.append(obj)
         else:
             print("HERE 2")
     return processed_data_arr
@@ -443,7 +489,9 @@ def processRawData():
     for k, v in data.items():
         if k == SCRAPE_DATETIME:
             continue
-        temp[departmenet_names_map.get(k, "OTHER")] = process_data(v)
+        temp[departmenet_names_map.get(k, "OTHER")] = process_data(
+            v, departmenet_names_map.get(k, "OTHER")
+        )
     processed_data_collection.delete_many({})
     processed_data_collection.insert_one(
         {**temp, SCRAPE_DATETIME: data[SCRAPE_DATETIME]}
@@ -602,6 +650,7 @@ def register():
     username = data.get("username")
     password = data.get("password")
     department = data.get("department")
+    sex = data.get("sex")
     if users_collection.find_one({"username": username}):
         return jsonify({"msg": "user already exists"}), 400
 
@@ -613,6 +662,7 @@ def register():
             "username": username,
             "password_hash": hashed_password,
             "department": department,
+            "sex": sex,
         }
     )
     return jsonify({"msg": "user registered successfully"}), 201
@@ -625,7 +675,10 @@ def login():
     password = data.get("password")
     user = users_collection.find_one({"username": username})
     if user and verify_password(password, user["password_hash"]):
-        additional_claims = {"department": user.get("department", "")}
+        additional_claims = {
+            "department": user.get("department", ""),
+            "sex": user.get("sex"),
+        }
         access_token = create_access_token(
             identity=username, additional_claims=additional_claims
         )
