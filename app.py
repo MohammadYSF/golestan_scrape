@@ -482,8 +482,6 @@ def golestan_login(driver, wait):
         driver.switch_to.parent_frame()
 
 
-# @app.route("/processRawData",methods=["GET"])
-# @jwt_required()
 def processRawData():
     temp = {}
     data = raw_data_collection.find_one({}, {"_id": 0})
@@ -503,8 +501,6 @@ def processRawData():
     return "processing raw data finished successfully"
 
 
-# @app.route("/scrape",methods=['GET'])
-# @jwt_required()
 def scrape():
     scrape_start_dt = datetime.now(timezone.utc)
     opts = FirefoxOptions()
@@ -700,7 +696,6 @@ scheduler = BackgroundScheduler(jobstores={"default": job_store})
 scheduler.add_job(scrape, "interval", seconds=60 * 10)
 scheduler.add_job(processRawData, "interval", seconds=3 * 60)
 
-# scrape()
 if __name__ == "__main__":
     app.run(debug=True)
 
